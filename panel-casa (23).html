@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E3EBF5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Casa">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Panel de casa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Azeret+Mono:wght@300;600&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --svw:1vw; --svh:1vh;
+  --bg:#E3EBF5; --surface:#F6F9FD; --ink:#13223A; --muted:#566985; --line:#C4D2E4;
+  --accent:#2462A8; --accent-ink:#FFFFFF; --today:#1F86E0; --sky-soft:#D7E6F8; --danger:#B23A35;
+  --work:#E9F0F9; --weekend:#D3DDF4; --weekend-ink:#3A4C9E; --holiday:#FBE2E0; --holiday-ink:#B23A35;
+  --tile:#2F5F94; --clock:#13223A; --clock-sec:#2462A8; --clock-glow:none;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1525; --surface:#132036; --ink:#E1E9F6; --muted:#8DA1BF; --line:#24344F;
+    --accent:#72AAF2; --accent-ink:#0A1322; --today:#4FB0FF; --sky-soft:#1A2C49; --danger:#FF8F87;
+    --work:#192741; --weekend:#1F2756; --weekend-ink:#AEB9FF; --holiday:#3B1D27; --holiday-ink:#FF9C94;
+    --tile:#3A68A8; --clock:#BFE2FF; --clock-sec:#6FBCFF; --clock-glow:0 0 22px rgba(95,180,255,.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1525; --surface:#132036; --ink:#E1E9F6; --muted:#8DA1BF; --line:#24344F;
+  --accent:#72AAF2; --accent-ink:#0A1322; --today:#4FB0FF; --sky-soft:#1A2C49; --danger:#FF8F87;
+  --work:#192741; --weekend:#1F2756; --weekend-ink:#AEB9FF; --holiday:#3B1D27; --holiday-ink:#FF9C94;
+  --tile:#3A68A8; --clock:#BFE2FF; --clock-sec:#6FBCFF; --clock-glow:0 0 22px rgba(95,180,255,.35);
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%; scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0; height:100%; -webkit-text-size-adjust:100%; touch-action:manipulation; overscroll-behavior:none; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:18px; line-height:1.4; -webkit-tap-highlight-color:transparent}
+button,input,select{font:inherit; color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--today); outline-offset:2px}
+
+.app{display:grid; grid-template-columns:minmax(0,4fr) minmax(0,4fr) minmax(0,3fr); grid-template-rows:minmax(0,1fr) minmax(0,1fr); gap:20px; height:100%; padding:24px 28px}
+.now{grid-column:1; grid-row:1; display:flex; flex-direction:column; justify-content:center; min-height:0; overflow:hidden}
+.today{grid-column:2; grid-row:1}
+.side{grid-column:3; grid-row:1 / span 2; display:flex; flex-direction:column; gap:20px; min-height:0}
+.side .panel{flex:1 1 0; min-height:0}
+.side .shop{flex:1.15 1 0}
+.week{grid-column:1 / 3; grid-row:2}
+/* Compra (Bring) */
+.shop-list{list-style:none; margin:0; padding:0; overflow:auto; flex:1; min-height:0; display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start}
+.shop-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(88px,1fr)); gap:8px}
+.chip{width:100%; min-height:96px; border:1.5px solid var(--line); background:var(--bg); color:var(--ink); border-radius:14px; padding:8px 6px; font-size:.92rem; line-height:1.15;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:4px; text-align:center; overflow-wrap:anywhere}
+.chip small{display:block; color:var(--muted); font-size:.75rem}
+.chip .ic{width:50px; height:50px; flex:none; display:grid; place-items:center; border-radius:12px; background:var(--tile)}
+.chip .ic img{width:42px; height:42px; object-fit:contain}
+.chip .ic .letter{font-family:var(--display); font-weight:800; font-size:1.6rem; color:#fff}
+.chip.bought{text-decoration:line-through; text-decoration-thickness:2px; opacity:.45}
+.chip.pending{border-style:dashed; color:var(--muted)}
+.shop-msg{color:var(--muted); font-size:.95rem; grid-column:1 / -1}
+.shop-msg.err{color:var(--danger)}
+.note-area{flex:1; min-height:0; width:100%; resize:none; border:0; background:transparent; font-family:var(--body); font-size:1.2rem; line-height:1.55; color:var(--ink);
+  background-image:linear-gradient(transparent calc(1.55em - 1px), var(--line) 0); background-size:100% 1.55em; background-attachment:local; padding:0; outline:none}
+.note-area::placeholder{color:var(--muted)}
+.note-area:focus-visible{outline:none}
+.notes:focus-within{box-shadow:inset 0 0 0 2px var(--accent)}
+.note-list{list-style:none; margin:0; padding:0; overflow:auto; flex:1; min-height:0}
+.note{display:flex; align-items:flex-start; gap:10px; padding:7px 0; border-bottom:1px solid var(--line)}
+.note:last-child{border-bottom:0}
+.note::before{content:""; flex:none; width:8px; height:8px; border-radius:50%; background:var(--accent); margin-top:.62em}
+.note-text{flex:1; min-width:0; border:0; background:transparent; color:var(--ink); text-align:left; font-size:1.15rem; line-height:1.35; padding:0; overflow-wrap:anywhere}
+.note .del{width:32px; height:32px; font-size:1.25rem}
+.panel{background:var(--surface); border-radius:22px; padding:18px 22px; display:flex; flex-direction:column; min-height:0}
+
+/* Reloj: el elemento protagonista */
+.clock{margin:0; font-family:"Azeret Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-weight:600; font-size:min(calc(var(--svw) * 7.4),calc(var(--svh) * 15)); line-height:1;
+  letter-spacing:-.05em; font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--clock); text-shadow:var(--clock-glow)}
+.clock .sec{font-weight:300; font-size:.4em; color:var(--clock-sec); margin-left:.2em; letter-spacing:0}
+.holiday-today{margin:.3em 0 0; color:var(--holiday-ink); font-weight:700; font-size:1.05rem}
+.date{font-family:var(--display); font-weight:600; font-size:min(calc(var(--svw) * 2),calc(var(--svh) * 3.4)); margin:.35em 0 0;}
+.date::first-letter{text-transform:uppercase}
+
+.weather{margin-top:calc(var(--svh) * 3.5); padding-top:0}
+.wx-main{display:flex; align-items:center; gap:.6em}
+.wx-temp{font-family:var(--display); font-weight:600; font-size:min(calc(var(--svw) * 3.6),calc(var(--svh) * 6)); line-height:1}
+.wx-desc{font-size:1rem; line-height:1.3}
+.wx-desc small{display:block; color:var(--muted); font-size:.9rem}
+.wx-days{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:4px; margin-top:8px}
+.wx-day{text-align:center; font-size:.85rem; padding:4px 2px; border-radius:12px; line-height:1.25}
+.wx-day:first-child{background:var(--sky-soft)}
+.wx-day b{display:block; font-family:var(--display); font-weight:600}
+.wx-ico{font-size:1.3rem; line-height:1.25; display:block}
+.wx-rain{color:var(--accent); font-size:.8rem}
+.wx-note{color:var(--muted); font-size:.78rem; margin-top:4px}
+
+h2{font-family:var(--display); font-weight:600; font-size:1.5rem; margin:0; letter-spacing:-.01em}
+.head{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px}
+.count{color:var(--muted); font-size:1rem}
+
+/* Tareas */
+.today-scroll{flex:1; min-height:0; overflow:auto}
+.sub{font-family:var(--body); font-size:.8rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin:2px 0 6px}
+.agenda{list-style:none; margin:0 0 14px; padding:0; display:flex; flex-direction:column; gap:6px}
+.ag-item{display:flex; gap:12px; align-items:baseline; width:100%; text-align:left; border:0; background:var(--bg); border-left:4px solid var(--accent); border-radius:10px; padding:8px 12px; font-size:1.15rem; line-height:1.3}
+.ag-item time{flex:none; font-weight:700; color:var(--accent); font-variant-numeric:tabular-nums; min-width:6.6em; font-size:1rem}
+.ag-item .rep{color:var(--muted); font-size:.85rem; margin-left:auto}
+.ag-item.past{opacity:.5}
+.ag-item.now{background:var(--sky-soft); border-left-color:var(--today)}
+.ag-item.now time::after{content:" ahora"; font-weight:400; color:var(--today)}
+.ag-empty{color:var(--muted); font-size:1rem; padding:2px 0 4px}
+.tasks{list-style:none; margin:0; padding:0}
+#day-dlg h3::first-letter{text-transform:uppercase}
+.day-hol{color:var(--holiday-ink); font-weight:700; margin:-6px 0 12px}
+.day{cursor:pointer}
+.task{display:flex; align-items:center; gap:14px; padding:10px 0; border-bottom:1px solid var(--line)}
+.task:last-child{border-bottom:0}
+.check{flex:none; width:34px; height:34px; border-radius:50%; border:2.5px solid var(--accent); background:transparent; display:grid; place-items:center; padding:0}
+.check svg{width:18px; height:18px; opacity:0; stroke:var(--accent-ink)}
+.task.done .check{background:var(--accent)}
+.task.done .check svg{opacity:1}
+.task-title{flex:1; font-size:1.25rem; min-width:0; overflow-wrap:anywhere}
+.task.done .task-title{color:var(--muted); text-decoration:line-through; text-decoration-thickness:2px}
+.tag{font-size:.8rem; color:var(--muted); border:1px solid var(--line); border-radius:99px; padding:1px 9px; white-space:nowrap}
+.tag.late{color:var(--danger); border-color:currentColor}
+.del{flex:none; border:0; background:transparent; color:var(--muted); width:36px; height:36px; border-radius:50%; font-size:1.4rem; line-height:1}
+.del:hover{background:var(--bg); color:var(--danger)}
+.add{display:flex; gap:10px; margin-top:12px; align-items:center; flex-wrap:wrap}
+.add input[type=text]{flex:1 1 120px; min-width:0; border:1.5px solid var(--line); background:var(--bg); border-radius:14px; padding:10px 14px; font-size:1.1rem}
+.toggle{display:flex; align-items:center; gap:6px; color:var(--muted); font-size:.95rem; user-select:none}
+.toggle input{width:20px; height:20px; accent-color:var(--accent)}
+.btn{border:0; border-radius:14px; padding:10px 18px; background:var(--accent); color:var(--accent-ink); font-weight:700}
+.btn.ghost{background:transparent; color:var(--ink); border:1.5px solid var(--line)}
+.btn.danger{background:transparent; color:var(--danger); border:1.5px solid currentColor}
+.icon-btn{border:1.5px solid var(--line); background:transparent; border-radius:12px; min-width:42px; height:42px; padding:0 12px}
+.empty{color:var(--muted); padding:18px 0; font-size:1.1rem}
+
+/* Semana */
+.week-nav{display:flex; gap:8px; align-items:center}
+.days{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:10px; flex:1; min-height:0}
+.day{display:flex; flex-direction:column; min-height:0; border-radius:16px; padding:10px; background:var(--bg)}
+.day{background:var(--work)}
+.day.is-weekend{background:var(--weekend)}
+.day.is-weekend .day-name,.day.is-weekend .day-num{color:var(--weekend-ink)}
+.day.is-holiday{background:var(--holiday)}
+.day.is-holiday .day-name,.day.is-holiday .day-num{color:var(--holiday-ink)}
+.day.is-today{box-shadow:inset 0 0 0 3px var(--today)}
+.day.is-today .day-name::after{content:" (hoy)"; font-weight:400}
+.hol-name{display:block; color:var(--holiday-ink); font-size:.8rem; font-weight:700; line-height:1.2; margin:-2px 0 6px}
+.legend{display:flex; gap:14px; align-items:center; color:var(--muted); font-size:.9rem; margin-left:auto; margin-right:12px; flex-wrap:wrap}
+.legend span{display:inline-flex; align-items:center; gap:6px}
+.legend i{width:14px; height:14px; border-radius:4px; display:inline-block; border:1px solid var(--line)}
+.day.is-past{opacity:.6}
+.day-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; width:100%; border:0; background:transparent; padding:0; text-align:left}
+.day-name{font-weight:700; font-size:1rem}
+.day-num{font-family:var(--display); font-weight:800; font-size:1.6rem; line-height:1}
+.events{list-style:none; margin:0; padding:0; overflow:auto; flex:1; min-height:0}
+.event{width:100%; text-align:left; border:0; background:var(--surface); border-left:4px solid var(--accent); border-radius:8px; padding:6px 8px; margin-bottom:6px; font-size:.95rem; line-height:1.25; display:block}
+.event time{display:block; font-variant-numeric:tabular-nums; font-weight:700; color:var(--accent); font-size:.85rem}
+.event{overflow-wrap:break-word; word-break:normal; hyphens:auto; -webkit-hyphens:auto; padding:5px 7px}
+.event .rep{color:var(--muted); font-size:.75rem}
+.day-add{border:1.5px dashed var(--line); background:transparent; border-radius:10px; padding:4px; color:var(--muted); font-size:1.2rem; margin-top:4px}
+
+.year-head svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.topbar{position:fixed; top:calc(14px + env(safe-area-inset-top,0px)); right:calc(14px + env(safe-area-inset-right,0px)); z-index:5; display:flex; gap:8px; align-items:center}
+.corner{position:fixed; left:calc(8px + env(safe-area-inset-left,0px)); bottom:calc(8px + env(safe-area-inset-bottom,0px)); z-index:5; display:flex; gap:8px; align-items:center}
+.corner .icon-btn{width:40px; height:40px; min-width:0; padding:0; display:grid; place-items:center; background:var(--surface); box-shadow:0 2px 10px rgba(0,0,0,.14)}
+.corner svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.topbar .icon-btn{background:var(--surface); box-shadow:0 2px 10px rgba(0,0,0,.12); display:inline-flex; align-items:center; justify-content:center; padding:0 10px}
+.topbar svg,.week-nav svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.week-nav .year-btn{display:inline-flex; align-items:center; gap:6px; font-weight:700}
+.app.scaled{transform-origin:0 0; position:absolute; top:env(safe-area-inset-top,0px); left:0}
+body.has-scaled{overflow:hidden}
+.reload-btn{
+  background:var(--surface); box-shadow:0 2px 10px rgba(0,0,0,.12); display:inline-flex; align-items:center; justify-content:center; padding:0}
+.reload-btn svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.reload-btn.spin svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tasks-panel .head{padding-right:52px}
+.tasks-panel .tasks{overflow:auto; flex:1; min-height:0}
+.tasks-panel .task-title{font-size:1.1rem}
+#task-form{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 8px; align-items:center}
+#task-form input[type=text]{width:100%}
+#task-form .toggle{grid-column:1 / -1; grid-row:2; font-size:.9rem}
+
+/* Calendario anual */
+.year-view{position:fixed; inset:0; z-index:15; background:var(--bg); display:flex; flex-direction:column; overflow:auto;
+  padding:calc(18px + env(safe-area-inset-top,0px)) 28px calc(18px + env(safe-area-inset-bottom,0px))}
+.year-view[hidden]{display:none}
+.year-head{display:flex; align-items:center; gap:10px; margin-bottom:14px}
+.year-head h2{font-size:1.9rem; min-width:3.2em; text-align:center; font-variant-numeric:tabular-nums}
+.home-btn{display:inline-flex; align-items:center; gap:8px; font-weight:700; background:var(--accent); color:var(--accent-ink); border-color:var(--accent); margin-right:8px}
+.year-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; flex:1}
+.month{background:var(--surface); border-radius:16px; padding:10px 12px 12px}
+.month h3{font-family:var(--display); font-weight:600; font-size:1.1rem; margin:0 0 6px}
+.month.is-current h3{color:var(--accent)}
+.mgrid{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:2px; text-align:center}
+.mgrid .wd{color:var(--muted); font-size:.72rem; font-weight:700; padding-bottom:2px}
+.md{border:0; background:transparent; border-radius:7px; padding:3px 0 9px; font-size:.88rem; line-height:1.2; font-variant-numeric:tabular-nums; position:relative; color:var(--ink)}
+.md.wk{background:var(--weekend); color:var(--weekend-ink)}
+.md.hol{background:var(--holiday); color:var(--holiday-ink); font-weight:700}
+.md.tod{box-shadow:inset 0 0 0 2px var(--today); font-weight:700}
+.md.ev::after,.md.rep::after{content:""; position:absolute; left:50%; bottom:2px; width:6px; height:6px; margin-left:-3px; border-radius:50%; box-sizing:border-box}
+.md.ev::after{background:var(--accent)}
+.md.rep::after{border:1.5px solid var(--accent); opacity:.8}
+.legend .dot-ev,.legend .dot-rep{width:8px; height:8px; border-radius:50%; display:inline-block; box-sizing:border-box}
+.legend .dot-ev{background:var(--accent)}
+.legend .dot-rep{border:1.5px solid var(--accent)}
+.sync-dot{align-self:center; width:12px; height:12px; border-radius:50%; background:var(--sun-warn,#E0A020); box-shadow:0 0 0 3px var(--surface)}
+.sync-dot.err{background:var(--danger)}
+.sync-status{font-size:.95rem; margin:6px 0 0}
+@media (orientation:portrait) and (min-width:700px){ .year-grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:699px){ .year-grid{grid-template-columns:repeat(2,minmax(0,1fr))} .year-head .legend{display:none} .year-view{padding-left:14px; padding-right:14px} }
+
+/* Modo noche */
+.night-veil{position:fixed; inset:0; background:#000; opacity:0; pointer-events:none; transition:opacity 1.5s; z-index:20}
+body.dim .night-veil{opacity:.55}
+
+dialog{border:0; border-radius:22px; padding:24px; background:var(--surface); color:var(--ink); width:min(620px,94vw); max-height:90vh}
+dialog::backdrop{background:rgba(10,20,20,.45)}
+dialog h3{font-family:var(--display); font-size:1.4rem; margin:0 0 14px}
+.field{display:flex; flex-direction:column; gap:4px; margin-bottom:14px}
+.field label{font-weight:700; font-size:.95rem}
+.field input{border:1.5px solid var(--line); background:var(--bg); border-radius:12px; padding:10px 12px; font-size:1.05rem}
+.row{display:flex; gap:12px}
+.row .field{flex:1}
+.actions{display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap; margin-top:8px}
+.actions .spacer{flex:1}
+.results{list-style:none; padding:0; margin:0 0 14px}
+.results button{width:100%; text-align:left; border:0; background:var(--bg); border-radius:10px; padding:8px 12px; margin-bottom:6px}
+.section{border-top:1px solid var(--line); padding-top:14px; margin-top:6px}
+.hint{color:var(--muted); font-size:.9rem; margin:4px 0 10px}
+
+/* Tablet en vertical (iPad de pie): todo cabe en una pantalla */
+@media (orientation:portrait) and (min-width:700px){
+  .app{grid-template-columns:minmax(0,3fr) minmax(0,2fr); grid-template-rows:auto minmax(0,.8fr) minmax(0,1.2fr) auto; padding:20px 24px 24px; gap:16px}
+  .now{grid-column:1 / -1; grid-row:1}
+  .today{grid-column:1; grid-row:2}
+  .side{display:contents}
+  .tasks-panel{grid-column:2; grid-row:2}
+  .week{grid-column:1 / -1; grid-row:3}
+  .shop{grid-column:1 / -1; grid-row:4; height:200px}
+  .shop .chip{min-height:84px}
+  .shop .shop-list{grid-template-columns:repeat(auto-fill,minmax(84px,1fr))}
+  .days{gap:6px}
+  .day{padding:8px 6px}
+  .event{font-size:.9rem; padding:5px 6px}
+  .clock{font-size:min(calc(var(--svw) * 13),calc(var(--svh) * 8.5))}
+  .date{font-size:min(calc(var(--svw) * 4.2),calc(var(--svh) * 3.2))}
+  .wx-temp{font-size:min(calc(var(--svw) * 8),calc(var(--svh) * 6))}
+}
+/* Móvil: una columna con scroll */
+@media (max-width:699px), (max-width:900px) and (orientation:landscape) and (max-height:500px){
+  body{height:auto}
+  .app{grid-template-columns:1fr; grid-template-rows:auto; height:auto; padding:18px 16px 90px}
+  .now,.today,.side,.week{grid-column:1; grid-row:auto}
+  .shop-list{min-height:120px}
+  .note-list{min-height:120px}
+  .clock{font-size:min(17vw,7rem)}
+  .date{font-size:1.5rem}
+  .wx-temp{font-size:3.4rem}
+  .today-scroll{overflow:visible}
+  .days{grid-template-columns:1fr}
+  .day{min-height:auto}
+  .day-head{justify-content:flex-start; gap:10px}
+  .legend{display:none}
+}
+@media (prefers-reduced-motion:reduce){ .night-veil{transition:none} }
+
+/* Accesos a otras apps */
+.launch{margin-top:calc(var(--svh) * 2.2); display:flex; gap:10px; flex-wrap:wrap}
+.launch-btn{display:inline-flex; align-items:center; gap:8px; padding:9px 16px; border-radius:14px; font-weight:700; font-size:1rem;
+  text-decoration:none; background:var(--surface); color:var(--ink); border:1.5px solid var(--line); box-shadow:0 1px 3px rgba(20,30,60,.08)}
+.launch-btn svg{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.launch-btn:active{transform:scale(.97)}
+
+/* ---------- Paleta alegre: cada sección con su color ---------- */
+:root{
+  --c-sky:#1E88E5;   --c-sky-soft:#E1EFFD;   --c-sky-ink:#1565C0;
+  --c-coral:#F2643F; --c-coral-soft:#FFEBE4; --c-coral-ink:#C2441F;
+  --c-green:#22A565; --c-green-soft:#E1F5EA; --c-green-ink:#16794A;
+  --c-violet:#7B5BE6;--c-violet-soft:#EEE9FF;--c-violet-ink:#5838C4;
+  --c-amber:#F0A10F; --c-amber-soft:#FFF3D8; --c-amber-ink:#A86A00;
+  --c-red:#E5484D;   --c-red-soft:#FDE7E8;   --c-red-ink:#B42B31;
+  --c-blue:#2F6FDE;  --c-blue-soft:#E3ECFD;  --c-blue-ink:#1F4FB0;
+  --on-sec:#FFFFFF; --on-amber:#3A2600;
+  --bg:#EEF2F8; --surface:#FFFFFF;
+  --weekend:#DCE9FB; --weekend-ink:#2F62B5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --c-sky:#5AB0F7;   --c-sky-soft:#16304D;   --c-sky-ink:#8CC8FF;
+    --c-coral:#FF8A6B; --c-coral-soft:#3A221D; --c-coral-ink:#FFAA92;
+    --c-green:#4FD596; --c-green-soft:#173426; --c-green-ink:#7FE6B4;
+    --c-violet:#A68CFF;--c-violet-soft:#2A2350;--c-violet-ink:#C3B2FF;
+    --c-amber:#FFC04D; --c-amber-soft:#3A2E12; --c-amber-ink:#FFD27F;
+    --c-red:#FF7A7F;   --c-red-soft:#3D1C20;   --c-red-ink:#FFA3A6;
+    --c-blue:#6E9CFF;  --c-blue-soft:#1A2A4D;  --c-blue-ink:#A3C0FF;
+    --on-sec:#10151F; --on-amber:#10151F;
+    --bg:#0C1322; --surface:#141E33;
+    --weekend:#1C2A4A; --weekend-ink:#9FC1FF;
+  }
+}
+:root[data-theme="dark"]{
+  --c-sky:#5AB0F7;   --c-sky-soft:#16304D;   --c-sky-ink:#8CC8FF;
+  --c-coral:#FF8A6B; --c-coral-soft:#3A221D; --c-coral-ink:#FFAA92;
+  --c-green:#4FD596; --c-green-soft:#173426; --c-green-ink:#7FE6B4;
+  --c-violet:#A68CFF;--c-violet-soft:#2A2350;--c-violet-ink:#C3B2FF;
+  --c-amber:#FFC04D; --c-amber-soft:#3A2E12; --c-amber-ink:#FFD27F;
+  --c-red:#FF7A7F;   --c-red-soft:#3D1C20;   --c-red-ink:#FFA3A6;
+  --c-blue:#6E9CFF;  --c-blue-soft:#1A2A4D;  --c-blue-ink:#A3C0FF;
+  --on-sec:#10151F; --on-amber:#10151F;
+  --bg:#0C1322; --surface:#141E33;
+  --weekend:#1C2A4A; --weekend-ink:#9FC1FF;
+}
+.now{--sec:var(--c-sky); --sec-soft:var(--c-sky-soft); --sec-ink:var(--c-sky-ink); --clock-sec:var(--c-sky)}
+.today{--sec:var(--c-violet); --sec-soft:var(--c-violet-soft); --sec-ink:var(--c-violet-ink)}
+.tasks-panel{--sec:var(--c-amber); --sec-soft:var(--c-amber-soft); --sec-ink:var(--c-amber-ink); --on-sec:var(--on-amber)}
+.shop{--sec:var(--c-red); --sec-soft:var(--c-red-soft); --sec-ink:var(--c-red-ink)}
+.week{--sec:var(--c-blue); --sec-soft:var(--c-blue-soft); --sec-ink:var(--c-blue-ink)}
+
+.panel{border-top:6px solid var(--sec, transparent); box-shadow:0 1px 3px rgba(20,30,60,.06)}
+.panel h2{color:var(--sec-ink, var(--ink))}
+.panel .sub{color:var(--sec-ink, var(--muted))}
+.panel .btn:not(.ghost):not(.danger){background:var(--sec, var(--accent)); color:var(--on-sec)}
+.panel .btn.ghost{border-color:var(--sec, var(--line)); color:var(--sec-ink, var(--ink))}
+.panel .toggle input{accent-color:var(--sec, var(--accent))}
+.panel .add input[type=text]:focus{outline:2px solid var(--sec, var(--accent)); outline-offset:1px}
+
+.today .ag-item{background:var(--sec-soft); border-left-color:var(--sec)}
+.today .ag-item time{color:var(--sec-ink)}
+.today .ag-item.now{background:var(--sec); color:var(--on-sec)}
+.today .ag-item.now time,.today .ag-item.now time::after{color:var(--on-sec)}
+
+.tasks-panel .check{border-color:var(--sec)}
+.tasks-panel .task.done .check{background:var(--sec)}
+.tasks-panel .check svg{stroke:var(--on-sec)}
+
+.shop .chip{background:var(--sec-soft); border-color:transparent}
+.shop .chip .ic{background:var(--sec)}
+
+.week .event{border-left-color:var(--sec)}
+.week .event time{color:var(--sec-ink)}
+.week .icon-btn{border-color:var(--sec-soft)}
+.week .year-btn{background:var(--sec); color:var(--on-sec); border-color:var(--sec)}
+.day.is-today{box-shadow:inset 0 0 0 3px var(--c-sky)}
+
+.now .wx-day:first-child{background:var(--c-sky-soft)}
+.corner .chat-btn{color:var(--c-sky-ink); text-decoration:none}
+.now .wx-rain{color:var(--c-sky-ink)}
+.date{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="now" aria-label="Hora y tiempo">
+    <p class="clock" id="clock"><span id="hm">--:--</span><span class="sec" id="ss">--</span></p>
+    <p class="date" id="date"></p>
+    <p class="holiday-today" id="holiday-today" hidden></p>
+    <div class="weather" id="weather"></div>
+  </section>
+
+  <section class="panel today" aria-labelledby="t-title">
+    <div class="head">
+      <h2 id="t-title">Hoy</h2>
+      <span class="count" id="t-count"></span>
+    </div>
+    <div class="today-scroll">
+      <h3 class="sub">Agenda de hoy</h3>
+      <ul class="agenda" id="agenda-today"></ul>
+      <h3 class="sub">Mañana</h3>
+      <ul class="agenda" id="agenda-tomorrow"></ul>
+    </div>
+    <button class="btn ghost" type="button" id="today-add" style="margin-top:10px; align-self:flex-start">+ Añadir evento hoy</button>
+  </section>
+
+  <div class="side">
+  <section class="panel tasks-panel" aria-labelledby="k-title">
+      <div class="head">
+        <h2 id="k-title">Tareas</h2>
+        <span class="count" id="k-count"></span>
+      </div>
+      <ul class="tasks" id="tasks"></ul>
+      <form class="add" id="task-form" autocomplete="off">
+        <input type="text" id="task-input" placeholder="Añadir tarea…" aria-label="Nueva tarea" maxlength="120">
+        <label class="toggle"><input type="checkbox" id="task-daily"> Cada día</label>
+        <button class="btn" type="submit">Añadir</button>
+      </form>
+    </section>
+
+    <section class="panel shop" aria-labelledby="s-title">
+      <div class="head">
+        <h2 id="s-title">Compra</h2>
+        <span class="count" id="s-count"></span>
+      </div>
+      <ul class="shop-list" id="shop-list"></ul>
+      <form class="add" id="shop-form" autocomplete="off">
+        <input type="text" id="shop-input" placeholder="Añadir a Bring… (leche, sin lactosa)" aria-label="Añadir a la lista de la compra" maxlength="80">
+        <button class="btn" type="submit">Añadir</button>
+      </form>
+    </section>
+  </div>
+
+  <section class="panel week" aria-labelledby="w-title">
+    <div class="head">
+      <h2 id="w-title">Esta semana</h2>
+      <div class="legend" aria-hidden="true">
+        <span><i style="background:var(--work)"></i>Laborable</span>
+        <span><i style="background:var(--weekend)"></i>Fin de semana</span>
+        <span><i style="background:var(--holiday)"></i>Festivo</span>
+      </div>
+      <div class="week-nav">
+        <button class="icon-btn" id="w-prev" aria-label="Semana anterior">‹</button>
+        <button class="icon-btn" id="w-today">Hoy</button>
+        <button class="icon-btn" id="w-next" aria-label="Semana siguiente">›</button>
+        <button class="icon-btn year-btn" id="open-year"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Año</button>
+      </div>
+    </div>
+    <div class="days" id="days"></div>
+  </section>
+</div>
+
+<div class="corner">
+  <button class="icon-btn" id="open-settings" aria-label="Ajustes"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+  <a class="icon-btn chat-btn" id="open-chatgpt" href="https://chatgpt.com/" rel="noopener" aria-label="Abrir ChatGPT" title="ChatGPT">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg>
+  </a>
+  <span class="sync-dot" id="sync-dot" hidden></span>
+</div>
+
+<div class="topbar">
+
+  <button class="icon-btn reload-btn" id="reload" aria-label="Actualizar página"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></button>
+</div>
+
+<section class="year-view" id="year-view" hidden aria-labelledby="y-title">
+  <div class="year-head">
+    <button class="icon-btn home-btn" id="year-home" aria-label="Volver a la pantalla de inicio"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.8V20h13V9.8"/><path d="M10 20v-5.5h4V20"/></svg>Inicio</button>
+    <button class="icon-btn" id="y-prev" aria-label="Año anterior">‹</button>
+    <h2 id="y-title">2026</h2>
+    <button class="icon-btn" id="y-next" aria-label="Año siguiente">›</button>
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:var(--work)"></i>Laborable</span>
+      <span><i style="background:var(--weekend)"></i>Fin de semana</span>
+      <span><i style="background:var(--holiday)"></i>Festivo</span>
+      <span><b class="dot-ev"></b>Con algo agendado</span>
+      <span><b class="dot-rep"></b>Solo lo semanal</span>
+    </div>
+  </div>
+  <div class="year-grid" id="year-grid"></div>
+</section>
+<div class="night-veil" aria-hidden="true"></div>
+
+<dialog id="day-dlg">
+  <h3 id="day-title"></h3>
+  <p class="day-hol" id="day-hol" hidden></p>
+  <ul class="agenda" id="day-list"></ul>
+  <div class="actions">
+    <button class="btn ghost" type="button" id="day-hol-btn"></button>
+    <button class="btn ghost" type="button" id="day-week" hidden>Ver esa semana</button>
+    <span class="spacer"></span>
+    <button class="btn ghost" type="button" data-close>Cerrar</button>
+    <button class="btn" type="button" id="day-add">Añadir evento</button>
+  </div>
+</dialog>
+
+<dialog id="event-dlg">
+  <form method="dialog" id="event-form">
+    <h3 id="event-dlg-title">Nuevo evento</h3>
+    <div class="field"><label for="ev-title">Qué</label><input id="ev-title" required maxlength="80" placeholder="Dentista, cumpleaños de Ana…"></div>
+    <div class="row">
+      <div class="field"><label for="ev-date">Día</label><input type="date" id="ev-date" required></div>
+      <div class="field"><label for="ev-time">Desde</label><input type="time" id="ev-time"></div>
+      <div class="field"><label for="ev-end">Hasta</label><input type="time" id="ev-end"></div>
+    </div>
+    <label class="toggle"><input type="checkbox" id="ev-weekly"> Repetir cada semana</label>
+    <div class="actions">
+      <button class="btn danger" type="button" id="ev-delete" hidden>Borrar</button>
+      <span class="spacer"></span>
+      <button class="btn ghost" type="button" data-close>Cancelar</button>
+      <button class="btn" type="submit">Guardar</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="settings-dlg">
+  <h3>Ajustes</h3>
+  <label class="toggle" style="color:var(--ink); margin-bottom:6px"><input type="checkbox" id="opt-geo"> Usar la ubicación de este dispositivo para el tiempo</label>
+  <p class="hint" id="geo-status"></p>
+  <div class="field">
+    <label for="city">O elige una ciudad a mano</label>
+    <div class="row" style="gap:8px">
+      <input id="city" placeholder="Escribe tu ciudad" style="flex:1">
+      <button class="btn" type="button" id="city-search">Buscar</button>
+    </div>
+    <p class="hint" id="city-current"></p>
+  </div>
+  <ul class="results" id="city-results"></ul>
+  <div class="field">
+    <label for="ine-code">Municipio para AEMET (opcional)</label>
+    <input id="ine-code" inputmode="numeric" maxlength="5" placeholder="Código INE de 5 cifras, por ejemplo 28079 (Madrid)">
+    <p class="hint" id="ine-status">Si lo dejas vacío, se usa el municipio más cercano a la ubicación.</p>
+  </div>
+
+  <div class="section">
+    <div class="field">
+      <label for="opt-scale">Tamaño del panel en esta pantalla</label>
+      <select id="opt-scale" style="border:1.5px solid var(--line); background:var(--bg); border-radius:12px; padding:10px 12px; font-size:1.05rem">
+        <option value="auto">Automático (se ajusta a la pantalla)</option>
+        <option value="0.7">70 %</option><option value="0.8">80 %</option><option value="0.9">90 %</option>
+        <option value="1">100 %</option><option value="1.1">110 %</option><option value="1.2">120 %</option><option value="1.3">130 %</option>
+      </select>
+      <p class="hint">Si en esta tablet algo no cabe o se ve muy pequeño, prueba otro tamaño. Se guarda solo para este dispositivo.</p>
+    </div>
+    <label class="toggle" style="color:var(--ink)"><input type="checkbox" id="opt-dim"> Oscurecer la pantalla de 23:00 a 7:00</label>
+    <label class="toggle" style="color:var(--ink); margin-top:10px"><input type="checkbox" id="opt-wake"> Mantener la pantalla encendida</label>
+    <p class="hint" id="wake-status"></p>
+    <p class="hint">Si tu navegador no lo permite, actívalo en Fully Kiosk o en los ajustes de la tablet.</p>
+  </div>
+
+  <div class="section">
+    <h3 style="font-size:1.15rem; margin-bottom:6px">Google Calendar</h3>
+    <p class="hint">Cada tarea y evento que añadas, cambies o borres se copia al calendario compartido «Casa», y todas las tablets conectadas con la misma dirección y clave comparten tareas, eventos, notas y festivos. Pega aquí la dirección y la clave del script de Google.</p>
+    <div class="field"><label for="sync-url">Dirección del script (termina en /exec)</label><input id="sync-url" inputmode="url" autocomplete="off" placeholder="https://script.google.com/macros/s/…/exec"></div>
+    <div class="field"><label for="sync-token">Clave</label><input id="sync-token" autocomplete="off"></div>
+    <div class="actions" style="justify-content:flex-start; margin-top:0">
+      <button class="btn" type="button" id="sync-connect">Conectar y sincronizar</button>
+      <button class="btn ghost" type="button" id="sync-off">Desconectar</button>
+    </div>
+    <p class="sync-status" id="sync-status"></p>
+  </div>
+
+  <div class="section">
+    <p class="hint">Los datos se guardan en esta tablet. Haz una copia para no perderlos.</p>
+    <div class="actions" style="justify-content:flex-start">
+      <button class="btn ghost" type="button" id="export">Guardar copia</button>
+      <label class="btn ghost" style="cursor:pointer">Restaurar copia<input type="file" id="import" accept="application/json" hidden></label>
+      <button class="btn danger" type="button" id="wipe">Borrar todo</button>
+    </div>
+  </div>
+  <div class="actions"><span class="hint" style="margin:0 auto 0 0">Versión del panel: 10-nov-2026 · 3</span><button class="btn" type="button" data-close>Cerrar</button></div>
+</dialog>
+
+<script>
+(() => {
+  const KEY = "panel-casa-v1";
+  const $ = s => document.querySelector(s);
+  const uid = () => Math.random().toString(36).slice(2, 10);
+  const pad = n => String(n).padStart(2, "0");
+  const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const parse = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+  const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  const mondayOf = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); return addDays(x, -((x.getDay() + 6) % 7)); };
+  const esc = s => s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  // ---------- Estado ----------
+  const blank = () => ({ tasks: [], events: [], notes: "", seeded: [], holidays: {}, queue: [], settings: { place: null, geo: null, useGeo: true, dim: true, wake: false, sync: null } });
+  // Actividades fijas que se añaden solas la primera vez (si las borras, no vuelven a aparecer)
+  const FIXED = [
+    { id: "fijo-escalada-diego", title: "Escalada Diego", date: "2026-09-01", time: "17:30", end: "18:30", weekly: true }, // martes
+    { id: "fijo-escalada-nerea", title: "Escalada Nerea", date: "2026-09-04", time: "18:30", end: "19:30", weekly: true }  // viernes
+  ];
+  const seed = () => {
+    state.seeded = state.seeded || [];
+    FIXED.forEach(f => { if (!state.seeded.includes(f.id)) { state.events.push({ ...f }); state.seeded.push(f.id); } });
+  };
+  let state = blank();
+  try { const raw = localStorage.getItem(KEY); if (raw) state = Object.assign(blank(), JSON.parse(raw)); } catch (e) {}
+  state.settings = Object.assign(blank().settings, state.settings || {});
+  if (typeof state.notes !== "string") state.notes = "";
+  if (!state.holidays || typeof state.holidays !== "object") state.holidays = {};
+  if (!Array.isArray(state.queue)) state.queue = [];
+  if (!state.bring || !Array.isArray(state.bring.items)) state.bring = { items: [] };
+  if (!Array.isArray(state.bringQueue)) state.bringQueue = [];
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+  seed(); save();
+
+  // ---------- Google Calendar (a través de un script de Google Apps Script) ----------
+  const toGoogle = {
+    event: e => ({ tipo: "evento", titulo: e.title, fecha: e.date, hora: e.time || "", fin: e.end || "", repetir: e.weekly ? "semanal" : "" }),
+    task: t => t.daily
+      ? { tipo: "tarea", titulo: t.title, fecha: t.date || iso(new Date()), hora: "", fin: "", repetir: "diaria" }
+      : { tipo: "tarea", titulo: (t.doneOn ? "✔ " : "") + t.title, fecha: t.date, hora: "", fin: "", repetir: "" }
+  };
+  const syncOn = () => !!(state.settings.sync && state.settings.sync.url);
+  // Cada cambio se envía al script, que lo guarda para las demás tablets y lo pasa a Google Calendar.
+  const job = (op, id, x) => ({ op, id, kind: x.kind, item: x.item ? JSON.parse(JSON.stringify(x.item)) : null, data: x.data || null, tries: 0 });
+  function enqueue(op, id, x) {
+    if (!syncOn()) return;
+    state.queue = state.queue.filter(q => q.id !== id);
+    state.queue.push(job(op, id, x));
+    save(); flush();
+  }
+  const syncUpsertEvent = e => enqueue("upsert", e.id, { kind: "event", item: e, data: toGoogle.event(e) });
+  const syncUpsertTask = t => enqueue("upsert", t.id, { kind: "task", item: t, data: toGoogle.task(t) });
+  const syncDelete = (id, kind) => enqueue("delete", id, { kind });
+  const syncSave = (id, item) => enqueue("save", id, { kind: id, item });
+  let flushing = false, syncError = "", lastSync = null, retryTimer = null;
+  // Se llama al script cargándolo como <script> (JSONP): así no hay problemas de permisos entre webs en Safari.
+  async function callScript(body) {
+    const full = JSON.stringify({ ...body, token: state.settings.sync.token });
+    if (encodeURIComponent(full).length <= 1800) return callScriptRetry(body);
+    const cid = uid() + Date.now().toString(36), size = 400, n = Math.ceil(full.length / size);
+    let res = null;
+    for (let i = 0; i < n; i++) {
+      res = await callScriptRetry({ op: "trozo", cid, i, n, parte: full.slice(i * size, (i + 1) * size) });
+      if (!res || !res.ok) return res || { ok: false };
+    }
+    return res;
+  }
+  async function callScriptRetry(body) {
+    try { return await callScriptOnce(body); }
+    catch (e) {
+      if (e.message === "bad") throw e;
+      await new Promise(r => setTimeout(r, 4000));
+      return callScriptOnce(body);
+    }
+  }
+  // 1.º intento: petición sin cookies de Google (evita el fallo de Google cuando hay varias cuentas abiertas).
+  // 2.º intento: cargar la respuesta como <script> (JSONP), por si el navegador bloquea lo anterior.
+  async function callScriptOnce(body) {
+    // Primero el método que ya funcionó en el iPad; el otro solo como respaldo.
+    try { return await callJsonp(body); }
+    catch (e) { if (e.message === "timeout") throw e; return callFetch(body); }
+  }
+  async function callFetch(body) {
+    const { url, token } = state.settings.sync;
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 15000);
+    try {
+      const r = await fetch(`${url}?p=${encodeURIComponent(JSON.stringify({ ...body, token }))}`,
+        { method: "GET", credentials: "omit", cache: "no-store", redirect: "follow", signal: ctrl.signal });
+      const text = await r.text();
+      try { return JSON.parse(text); } catch (e) { throw new Error("bad"); }
+    } catch (e) {
+      if (e.name === "AbortError") throw new Error("timeout");
+      throw e;
+    } finally { clearTimeout(timer); }
+  }
+  function callJsonp(body) {
+    const { url, token } = state.settings.sync;
+    return new Promise((resolve, reject) => {
+      const cb = "panelCb_" + Date.now() + Math.random().toString(36).slice(2, 7);
+      const tag = document.createElement("script");
+      let done = false;
+      const finish = () => { done = true; clearTimeout(timer); try { delete window[cb]; } catch (e) { window[cb] = undefined; } tag.remove(); };
+      const timer = setTimeout(() => { if (!done) { finish(); reject(new Error("timeout")); } }, 25000);
+      window[cb] = data => { if (done) return; finish(); resolve(data || { ok: false }); };
+      tag.onerror = () => { if (!done) { finish(); reject(new Error("load")); } };
+      tag.onload = () => setTimeout(() => { if (!done) { finish(); reject(new Error("bad")); } }, 300);
+      tag.src = `${url}?callback=${cb}&p=${encodeURIComponent(JSON.stringify({ ...body, token }))}`;
+      document.head.appendChild(tag);
+    });
+  }
+  const connError = e => e && e.message === "timeout"
+    ? "Google está tardando mucho en responder. Se volverá a intentar solo en un minuto."
+    : e && e.message === "bad"
+    ? "Google ha devuelto una página de error en vez del script. Suele pasar cuando hay varias cuentas de Google abiertas en este navegador: cierra la sesión de las que no uses y vuelve a probar."
+    : "Google ha rechazado la conexión con el script. Si en este navegador hay varias cuentas de Google abiertas, cierra la sesión de las que no uses y vuelve a probar.";
+  async function flush() {
+    if (flushing || !syncOn()) return showSync();
+    flushing = true;
+    try {
+      while (state.queue.length && syncOn()) {
+        const job = state.queue[0];
+        let res;
+        try { res = await callScript({ op: job.op, id: job.id, kind: job.kind, item: job.item, data: job.data }); }
+        catch (e) { syncError = navigator.onLine === false ? "Sin internet. Se volverá a intentar en un minuto." : connError(e); break; }
+        if (res.ok) { state.queue.shift(); syncError = ""; lastSync = new Date(); save(); continue; }
+        if (res.error === "token") { syncError = "La clave no coincide con la del script de Google."; break; }
+        job.tries = (job.tries || 0) + 1;
+        syncError = `Google ha dado un error: ${res.error || "desconocido"}.`;
+        if (job.tries >= 3) state.queue.shift();
+        save(); break;
+      }
+    } finally { flushing = false; }
+    showSync();
+    clearTimeout(retryTimer);
+    if (state.queue.length && syncOn()) retryTimer = setTimeout(flush, 60000);
+  }
+
+  // ---------- Recibir los cambios de las otras tablets ----------
+  function applyRemote(items) {
+    const pending = new Set(state.queue.map(q => q.id));
+    let changed = false;
+    items.slice().sort((a, b) => a.r - b.r).forEach(it => {
+      if (pending.has(it.id)) return; // lo nuestro sin enviar manda
+      if (it.k === "task" || it.k === "event") {
+        const list = it.k === "task" ? state.tasks : state.events;
+        const i = list.findIndex(x => x.id === it.id);
+        if (it.x) { if (i >= 0) { list.splice(i, 1); changed = true; } }
+        else if (it.d) {
+          const obj = { ...it.d, id: it.id };
+          if (i < 0) { list.push(obj); changed = true; }
+          else if (JSON.stringify(list[i]) !== JSON.stringify(obj)) { list[i] = obj; changed = true; }
+        }
+      } else if (it.k === "notes" && it.d && !notesDirty) {
+        if (state.notes !== (it.d.text || "")) { state.notes = it.d.text || ""; changed = true; }
+      } else if (it.k === "holidays" && it.d) {
+        if (JSON.stringify(state.holidays) !== JSON.stringify(it.d)) { state.holidays = it.d; changed = true; }
+      }
+    });
+    return changed;
+  }
+  const refreshViews = () => { renderTasks(); renderWeek(); renderNotes(); tick(); if (!$("#year-view").hidden) renderYear(); };
+  let pulling = false;
+  async function pull() {
+    if (!syncOn() || pulling) return;
+    pulling = true;
+    try {
+      const res = await callScript({ op: "pull", since: state.rev || 0 });
+      if (!res || !res.ok) return;
+      if (applyRemote(res.items || [])) refreshViews();
+      if (res.rev) state.rev = res.rev;
+      save();
+    } catch (e) {
+    } finally { pulling = false; }
+  }
+  // Primera conexión de una tablet: junta lo que hay en Google con lo de esta tablet.
+  async function initialMerge() {
+    const res = await callScript({ op: "pull", since: 0 });
+    if (!res || !res.ok) throw new Error(res && res.error === "token" ? "token" : (res && res.error) || "pull");
+    const items = res.items || [];
+    const onServer = new Set(items.map(i => i.id));
+    const localHol = { ...state.holidays }, localNotes = state.notes;
+    state.queue = [];
+    applyRemote(items);
+    state.events.filter(e => !onServer.has(e.id)).forEach(e => state.queue.push(job("upsert", e.id, { kind: "event", item: e, data: toGoogle.event(e) })));
+    state.tasks.filter(t => !onServer.has(t.id)).forEach(t => state.queue.push(job("upsert", t.id, { kind: "task", item: t, data: toGoogle.task(t) })));
+    if (!onServer.has("notes") && localNotes) state.queue.push(job("save", "notes", { kind: "notes", item: { text: localNotes } }));
+    const mergedHol = { ...localHol, ...state.holidays };
+    if (JSON.stringify(mergedHol) !== JSON.stringify(state.holidays) || (!onServer.has("holidays") && Object.keys(mergedHol).length)) {
+      state.holidays = mergedHol;
+      state.queue.push(job("save", "holidays", { kind: "holidays", item: mergedHol }));
+    }
+    state.rev = res.rev || 0;
+    state.itemSync = 2;
+    save(); refreshViews();
+    await flush();
+  }
+  // ---------- Compra (Bring, a través del script de Google) ----------
+  let bringErr = "", bringBusy = false;
+  const doneTimers = new Map();
+  const bringMsg = res => res && res.error === "falta el identificador"
+    ? "Actualiza el script de Google con la versión que incluye Bring."
+    : (res && res.error) || "No se pudo leer la lista de Bring.";
+  // Iconos del catálogo de Bring: el nombre interno (en alemán) en minúsculas, sin acentos ni diéresis.
+  const bringSlug = t => String(t || "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "_");
+  const BRING_IMG = "https://web.getbring.com/assets/images/items/";
+  function shopIcon(clave, nombre) {
+    const letter = (bringSlug(nombre).replace(/[^a-z]/g, "")[0] || "?");
+    return `<span class="ic"><img src="${BRING_IMG}${encodeURIComponent(bringSlug(clave))}.png" alt="" loading="lazy" data-letter="${letter}"></span>`;
+  }
+  // Si Bring no tiene icono para ese producto, se prueba el de la inicial y, si tampoco, se pinta la letra.
+  document.addEventListener("error", e => {
+    const img = e.target;
+    if (!(img instanceof HTMLImageElement) || !img.closest(".ic")) return;
+    if (!img.dataset.tried) { img.dataset.tried = "1"; img.src = `${BRING_IMG}${img.dataset.letter}.png`; return; }
+    img.replaceWith(Object.assign(document.createElement("span"), { className: "letter", textContent: img.dataset.letter.toUpperCase() }));
+  }, true);
+  function renderShop() {
+    const ul = $("#shop-list");
+    if (!syncOn()) { ul.innerHTML = `<li class="shop-msg">Para ver tu lista de Bring, conecta antes Google en Ajustes.</li>`; $("#s-count").textContent = ""; return; }
+    const items = state.bring.items || [];
+    const adds = state.bringQueue.filter(q => q.op === "bring_add");
+    let html = items.map(it => `<li><button class="chip${doneTimers.has(it.clave) ? " bought" : ""}" data-clave="${esc(it.clave)}" aria-label="${esc(it.nombre)}: tocar para marcar como comprado">${shopIcon(it.clave, it.nombre)}<span>${esc(it.nombre)}</span>${it.detalle ? `<small>${esc(it.detalle)}</small>` : ""}</button></li>`).join("");
+    html += adds.map(q => `<li><span class="chip pending">${shopIcon(q.nombre, q.nombre)}<span>${esc(q.nombre)}</span>${q.detalle ? `<small>${esc(q.detalle)}</small>` : ""}</span></li>`).join("");
+    if (!items.length && !adds.length && !bringErr) html = `<li class="shop-msg">${state.bring.at ? "La lista está vacía." : "Cargando la lista de Bring…"}</li>`;
+    if (bringErr) html += `<li class="shop-msg err">${esc(bringErr)}</li>`;
+    ul.innerHTML = html;
+    const n = items.length;
+    $("#s-count").textContent = n ? `${n} producto${n > 1 ? "s" : ""}` : "";
+  }
+  async function bringFlush() {
+    if (bringBusy || !syncOn()) return;
+    bringBusy = true;
+    try {
+      while (state.bringQueue.length) {
+        const q = state.bringQueue[0];
+        let res;
+        try { res = await callScript(q); } catch (e) { bringErr = "Sin conexión. Se volverá a intentar en un minuto."; break; }
+        if (!res.ok) { bringErr = bringMsg(res); if (++q.tries >= 3) state.bringQueue.shift(); break; }
+        state.bringQueue.shift();
+        state.bring = { items: res.compra || [], at: Date.now() }; bringErr = "";
+        save(); renderShop();
+      }
+    } finally { bringBusy = false; save(); renderShop(); }
+  }
+  async function bringRefresh() {
+    if (!syncOn() || bringBusy) return;
+    if (state.bringQueue.length) return bringFlush();
+    bringBusy = true;
+    try {
+      const res = await callScript({ op: "bring_list" });
+      if (res.ok) { state.bring = { items: res.compra || [], at: Date.now() }; bringErr = ""; save(); }
+      else bringErr = bringMsg(res);
+    } catch (e) { bringErr = "No se pudo conectar para leer la lista de Bring."; }
+    finally { bringBusy = false; renderShop(); }
+  }
+  function bringEnqueue(q) { q.tries = 0; state.bringQueue.push(q); save(); renderShop(); bringFlush(); }
+  $("#shop-form").addEventListener("submit", e => {
+    e.preventDefault();
+    const raw = $("#shop-input").value.trim(); if (!raw) return;
+    if (!syncOn()) { bringErr = ""; renderShop(); return; }
+    const [nombre, ...rest] = raw.split(",");
+    bringEnqueue({ op: "bring_add", nombre: nombre.trim(), detalle: rest.join(",").trim() });
+    $("#shop-input").value = "";
+  });
+  // Tocar un producto lo tacha; a los 2,5 s se marca como comprado en Bring (tocar otra vez lo deshace).
+  $("#shop-list").addEventListener("click", e => {
+    const b = e.target.closest(".chip[data-clave]"); if (!b) return;
+    const clave = b.dataset.clave;
+    if (doneTimers.has(clave)) { clearTimeout(doneTimers.get(clave)); doneTimers.delete(clave); return renderShop(); }
+    doneTimers.set(clave, setTimeout(() => {
+      doneTimers.delete(clave);
+      state.bring.items = state.bring.items.filter(it => it.clave !== clave);
+      bringEnqueue({ op: "bring_done", clave });
+    }, 2500));
+    renderShop();
+  });
+
+  async function syncNow() {
+    if (!syncOn()) return showSync();
+    if (state.itemSync !== 2) { try { await initialMerge(); bringRefresh(); } catch (e) { syncError = e.message === "token" ? "La clave no coincide con la del script de Google." : connError(e); showSync(); } return; }
+    await flush(); await pull(); showSync(); bringRefresh();
+  }
+  function showSync() {
+    const dot = $("#sync-dot"), st = $("#sync-status");
+    const pending = state.queue.length;
+    if (dot) { dot.hidden = !syncOn() || (!pending && !syncError); dot.classList.toggle("err", !!syncError); dot.title = syncError || `${pending} cambios pendientes de enviar a Google Calendar`; }
+    if (!st) return;
+    if (!syncOn()) st.textContent = "No conectado.";
+    else if (syncError) { st.textContent = syncError; st.style.color = "var(--danger)"; return; }
+    else if (pending) st.textContent = `Enviando ${pending} cambio${pending > 1 ? "s" : ""}…`;
+    else st.textContent = lastSync ? `Todo sincronizado (último envío a las ${pad(lastSync.getHours())}:${pad(lastSync.getMinutes())}). Los cambios de otras tablets llegan cada minuto.` : "Conectado. Todo al día.";
+    st.style.color = "";
+  }
+
+  let today = iso(new Date());
+  let weekStart = mondayOf(new Date());
+
+  // ---------- Festivos (ciudad de Madrid: nacionales, autonómicos y locales) ----------
+  const HOLIDAYS = {
+    "2026-01-01": "Año Nuevo", "2026-01-06": "Reyes", "2026-04-02": "Jueves Santo", "2026-04-03": "Viernes Santo",
+    "2026-05-01": "Fiesta del Trabajo", "2026-05-02": "Día de la Comunidad", "2026-05-15": "San Isidro",
+    "2026-08-15": "La Asunción", "2026-10-12": "Fiesta Nacional", "2026-11-01": "Todos los Santos",
+    "2026-11-02": "Todos los Santos (traslado)", "2026-11-09": "La Almudena", "2026-12-06": "Constitución",
+    "2026-12-07": "Constitución (traslado)", "2026-12-08": "Inmaculada", "2026-12-25": "Navidad",
+    "2027-01-01": "Año Nuevo", "2027-01-06": "Reyes", "2027-03-19": "San José", "2027-03-25": "Jueves Santo",
+    "2027-03-26": "Viernes Santo", "2027-05-01": "Fiesta del Trabajo", "2027-05-15": "San Isidro",
+    "2027-08-16": "La Asunción (traslado)", "2027-10-12": "Fiesta Nacional", "2027-11-01": "Todos los Santos",
+    "2027-11-09": "La Almudena", "2027-12-06": "Constitución", "2027-12-08": "Inmaculada", "2027-12-25": "Navidad"
+  };
+  // Los festivos que añadas o quites tocando el día se guardan en state.holidays ("" = quitado)
+  const holiday = k => (k in state.holidays) ? (state.holidays[k] || null) : (HOLIDAYS[k] || null);
+
+  // ---------- Reloj ----------
+  function drawClock(n) {
+    $("#hm").textContent = `${pad(n.getHours())}:${pad(n.getMinutes())}`;
+    $("#ss").textContent = pad(n.getSeconds());
+  }
+
+  const dateFmt = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" });
+  function tick() {
+    const n = new Date();
+    drawClock(n);
+    $("#date").textContent = dateFmt.format(n);
+    const hol = holiday(iso(n)), ht = $("#holiday-today");
+    ht.hidden = !hol; ht.textContent = hol ? `Festivo: ${hol}` : "";
+    const t = iso(n);
+    if (t !== today) { today = t; weekStart = mondayOf(n); renderTasks(); renderWeek(); }
+    else if (n.getSeconds() === 0) renderAgendaToday();
+    const h = n.getHours();
+    document.body.classList.toggle("dim", state.settings.dim && (h >= 23 || h < 7));
+  }
+
+  // ---------- Tareas ----------
+  function visibleTasks() {
+    return state.tasks.filter(t => {
+      if (t.daily) return true;
+      if (t.doneOn) return t.doneOn === today;
+      return t.date <= today;
+    }).map(t => ({ ...t, isDone: t.daily ? (t.doneDates || []).includes(today) : !!t.doneOn }))
+      .sort((a, b) => a.isDone - b.isDone || (b.daily - a.daily));
+  }
+  // Lista de eventos (agenda de hoy y ventana de un día)
+  const nowHM = () => { const n = new Date(); return `${pad(n.getHours())}:${pad(n.getMinutes())}`; };
+  const plusHour = t => { const [h, m] = t.split(":").map(Number); return `${pad(Math.min(h + 1, 23))}:${pad(m)}`; };
+  function agendaHtml(k, emptyText) {
+    const evs = eventsOn(k);
+    if (!evs.length) return `<li class="ag-empty">${emptyText}</li>`;
+    const isToday = k === today, now = nowHM();
+    return evs.map(e => {
+      let cls = "ag-item";
+      if (isToday && e.time) {
+        const end = e.end || plusHour(e.time);
+        if (end <= now) cls += " past"; else if (e.time <= now) cls += " now";
+      }
+      const when = e.time ? `${e.time}${e.end ? `–${e.end}` : ""}` : "Todo el día";
+      return `<li><button class="${cls}" data-id="${e.id}"><time>${when}</time><span>${esc(e.title)}</span>${e.weekly ? `<span class="rep" title="Se repite cada semana">↻</span>` : ""}</button></li>`;
+    }).join("");
+  }
+  function renderAgendaToday() {
+    $("#agenda-today").innerHTML = agendaHtml(today, "Nada agendado para hoy.");
+    $("#agenda-tomorrow").innerHTML = agendaHtml(iso(addDays(parse(today), 1)), "Nada agendado para mañana.");
+  }
+  ["#agenda-today", "#agenda-tomorrow"].forEach(sel => $(sel).addEventListener("click", e => {
+    const b = e.target.closest(".ag-item"); if (b) openEvent(state.events.find(x => x.id === b.dataset.id));
+  }));
+  $("#today-add").onclick = () => openEvent(null, today);
+
+  function renderTasks() {
+    renderAgendaToday();
+    const list = visibleTasks();
+    const ul = $("#tasks");
+    const pending = list.filter(t => !t.isDone).length;
+    const nEv = eventsOn(today).length;
+    $("#t-count").textContent = nEv ? `${nEv} en agenda` : "";
+    $("#k-count").textContent = list.length ? (pending ? `${pending} pendiente${pending > 1 ? "s" : ""}` : "Todo hecho") : "";
+    if (!list.length) { ul.innerHTML = `<li class="empty">Sin tareas para hoy. Escribe una abajo para empezar.</li>`; return; }
+    ul.innerHTML = list.map(t => `
+      <li class="task${t.isDone ? " done" : ""}" data-id="${t.id}">
+        <button class="check" data-act="toggle" aria-label="${t.isDone ? "Marcar como pendiente" : "Marcar como hecha"}">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </button>
+        <span class="task-title">${esc(t.title)}</span>
+        ${t.daily ? `<span class="tag">cada día</span>` : (t.date < today && !t.isDone ? `<span class="tag late">de antes</span>` : "")}
+        <button class="del" data-act="del" aria-label="Borrar tarea">×</button>
+      </li>`).join("");
+  }
+  $("#tasks").addEventListener("click", e => {
+    const b = e.target.closest("button[data-act]"); if (!b) return;
+    const id = b.closest(".task").dataset.id;
+    const t = state.tasks.find(x => x.id === id); if (!t) return;
+    if (b.dataset.act === "del") {
+      if (t.daily && !confirm(`¿Borrar la tarea diaria «${t.title}»?`)) return;
+      state.tasks = state.tasks.filter(x => x.id !== id);
+      syncDelete(id, "task");
+    } else if (t.daily) {
+      const d = new Set(t.doneDates || []);
+      d.has(today) ? d.delete(today) : d.add(today);
+      const limit = iso(addDays(new Date(), -14));
+      t.doneDates = [...d].filter(x => x >= limit);
+      syncUpsertTask(t);
+    } else {
+      t.doneOn = t.doneOn ? null : today;
+      syncUpsertTask(t);
+    }
+    save(); renderTasks();
+  });
+  $("#task-form").addEventListener("submit", e => {
+    e.preventDefault();
+    const title = $("#task-input").value.trim(); if (!title) return;
+    const daily = $("#task-daily").checked;
+    const t = daily ? { id: uid(), title, daily: true, date: today, doneDates: [] } : { id: uid(), title, daily: false, date: today, doneOn: null };
+    state.tasks.push(t);
+    syncUpsertTask(t);
+    $("#task-input").value = ""; $("#task-daily").checked = false;
+    save(); renderTasks();
+  });
+
+  // ---------- Semana ----------
+  const dayShort = ["lun", "mar", "mié", "jue", "vie", "sáb", "dom"];
+  const monthFmt = new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "long" });
+  const eventsOn = d => {
+    const wd = parse(d).getDay();
+    return state.events.filter(e => e.weekly ? (parse(e.date).getDay() === wd && d >= e.date) : e.date === d)
+      .sort((a, b) => (a.time || "99").localeCompare(b.time || "99"));
+  };
+  function renderWeek() {
+    const thisMonday = iso(mondayOf(new Date()));
+    const ws = iso(weekStart);
+    const end = addDays(weekStart, 6);
+    $("#w-title").textContent = ws === thisMonday ? "Esta semana" : `Semana del ${monthFmt.format(weekStart)} al ${monthFmt.format(end)}`;
+    $("#days").innerHTML = Array.from({ length: 7 }, (_, i) => {
+      const d = addDays(weekStart, i), k = iso(d);
+      const evs = eventsOn(k);
+      const hol = holiday(k);
+      return `<div data-date="${k}" class="day${i >= 5 ? " is-weekend" : ""}${hol ? " is-holiday" : ""}${k === today ? " is-today" : ""}${k < today ? " is-past" : ""}">
+        <button class="day-head" data-hol="${k}" aria-label="Ver lo agendado el ${dayShort[i]} ${d.getDate()}"><span class="day-name">${dayShort[i]}</span><span class="day-num">${d.getDate()}</span></button>
+        ${hol ? `<span class="hol-name">${esc(hol)}</span>` : ""}
+        <ul class="events">${evs.map(e => `<li><button class="event" data-id="${e.id}">${e.time ? `<time>${e.time}${e.end ? `–${e.end}` : ""}</time>` : ""}${esc(e.title)}${e.weekly ? ` <span class="rep">↻</span>` : ""}</button></li>`).join("")}</ul>
+        <button class="day-add" data-date="${k}" aria-label="Añadir evento el ${dayShort[i]} ${d.getDate()}">+</button>
+      </div>`;
+    }).join("");
+  }
+  $("#days").addEventListener("click", e => {
+    const add = e.target.closest(".day-add"); if (add) return openEvent(null, add.dataset.date);
+    const ev = e.target.closest(".event"); if (ev) return openEvent(state.events.find(x => x.id === ev.dataset.id));
+    const day = e.target.closest(".day"); if (day) openDay(day.dataset.date, false);
+  });
+  $("#w-prev").onclick = () => { weekStart = addDays(weekStart, -7); renderWeek(); };
+  $("#w-next").onclick = () => { weekStart = addDays(weekStart, 7); renderWeek(); };
+  $("#w-today").onclick = () => { weekStart = mondayOf(new Date()); renderWeek(); };
+
+  // ---------- Ventana de un día ----------
+  const dayDlg = $("#day-dlg");
+  const longFmt = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" });
+  const longFmtY = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  let dayOpen = null, dayFromYear = false, returnToDay = null;
+  function openDay(k, fromYear) {
+    dayOpen = k; dayFromYear = !!fromYear;
+    const d = parse(k), hol = holiday(k);
+    $("#day-title").textContent = (d.getFullYear() === new Date().getFullYear() ? longFmt : longFmtY).format(d) + (k === today ? " (hoy)" : "");
+    $("#day-hol").hidden = !hol; $("#day-hol").textContent = hol ? `Festivo: ${hol}` : "";
+    $("#day-list").innerHTML = agendaHtml(k, "No tienes nada agendado este día.");
+    $("#day-hol-btn").textContent = hol ? "Quitar festivo" : "Marcar como festivo";
+    $("#day-week").hidden = !fromYear;
+    if (!dayDlg.open) dayDlg.showModal();
+  }
+  $("#day-list").addEventListener("click", e => {
+    const b = e.target.closest(".ag-item"); if (!b) return;
+    returnToDay = dayOpen; dayDlg.close();
+    openEvent(state.events.find(x => x.id === b.dataset.id));
+  });
+  $("#day-add").onclick = () => { const k = dayOpen; returnToDay = k; dayDlg.close(); openEvent(null, k); };
+  $("#day-week").onclick = () => { weekStart = mondayOf(parse(dayOpen)); renderWeek(); dayDlg.close(); closeYear(); };
+  $("#day-hol-btn").onclick = () => {
+    const k = dayOpen, cur = holiday(k);
+    if (cur) { if (!confirm(`¿Quitar el festivo «${cur}» de este día?`)) return; state.holidays[k] = ""; }
+    else { const name = prompt("Nombre del festivo:", "Festivo"); if (name === null) return; state.holidays[k] = name.trim() || "Festivo"; }
+    save(); syncSave("holidays", state.holidays); refreshViews(); openDay(k, dayFromYear);
+  };
+
+  const evDlg = $("#event-dlg");
+  let editing = null;
+  // Al cerrar la ficha de un evento abierta desde un día, se vuelve a ese día.
+  evDlg.addEventListener("close", () => {
+    if (returnToDay) { const k = returnToDay; returnToDay = null; openDay(k, dayFromYear); }
+  });
+  function openEvent(ev, date) {
+    editing = ev || null;
+    $("#event-dlg-title").textContent = ev ? "Editar evento" : "Nuevo evento";
+    $("#ev-title").value = ev ? ev.title : "";
+    $("#ev-date").value = ev ? ev.date : date;
+    $("#ev-time").value = ev ? (ev.time || "") : "";
+    $("#ev-end").value = ev ? (ev.end || "") : "";
+    $("#ev-weekly").checked = ev ? !!ev.weekly : false;
+    $("#ev-delete").hidden = !ev;
+    evDlg.showModal(); $("#ev-title").focus();
+  }
+  $("#event-form").addEventListener("submit", e => {
+    e.preventDefault();
+    const data = { title: $("#ev-title").value.trim(), date: $("#ev-date").value, time: $("#ev-time").value || "", end: $("#ev-time").value ? ($("#ev-end").value || "") : "", weekly: $("#ev-weekly").checked };
+    if (!data.title || !data.date) return;
+    let ev;
+    if (editing) { Object.assign(editing, data); ev = editing; } else { ev = { id: uid(), ...data }; state.events.push(ev); }
+    syncUpsertEvent(ev);
+    save(); renderWeek(); renderTasks(); if (!$("#year-view").hidden) renderYear(); evDlg.close();
+  });
+  $("#ev-delete").onclick = () => {
+    if (!editing) return;
+    state.events = state.events.filter(x => x.id !== editing.id);
+    syncDelete(editing.id, "event");
+    save(); renderWeek(); renderTasks(); if (!$("#year-view").hidden) renderYear(); evDlg.close();
+  };
+
+  // ---------- Tiempo (Open-Meteo, sin clave) ----------
+  const WX = {
+    0: ["☀️", "Despejado"], 1: ["🌤️", "Casi despejado"], 2: ["⛅", "Algunas nubes"], 3: ["☁️", "Nublado"],
+    45: ["🌫️", "Niebla"], 48: ["🌫️", "Niebla con escarcha"], 51: ["🌦️", "Llovizna débil"], 53: ["🌦️", "Llovizna"], 55: ["🌧️", "Llovizna intensa"],
+    56: ["🌧️", "Llovizna helada"], 57: ["🌧️", "Llovizna helada"], 61: ["🌦️", "Lluvia débil"], 63: ["🌧️", "Lluvia"], 65: ["🌧️", "Lluvia fuerte"],
+    66: ["🌧️", "Lluvia helada"], 67: ["🌧️", "Lluvia helada"], 71: ["🌨️", "Nieve débil"], 73: ["🌨️", "Nieve"], 75: ["❄️", "Nieve intensa"], 77: ["🌨️", "Granos de nieve"],
+    80: ["🌦️", "Chubascos"], 81: ["🌧️", "Chubascos"], 82: ["⛈️", "Chubascos fuertes"], 85: ["🌨️", "Chubascos de nieve"], 86: ["❄️", "Chubascos de nieve"],
+    95: ["⛈️", "Tormenta"], 96: ["⛈️", "Tormenta con granizo"], 99: ["⛈️", "Tormenta con granizo"]
+  };
+  const wx = c => WX[c] || ["🌡️", "—"];
+  let geoProblem = "";
+  const getPosition = () => new Promise((res, rej) => {
+    if (!("geolocation" in navigator)) return rej(new Error("sin geolocalización"));
+    navigator.geolocation.getCurrentPosition(res, rej, { timeout: 12000, maximumAge: 30 * 60 * 1000, enableHighAccuracy: false });
+  });
+  async function resolvePlace() {
+    const st = state.settings;
+    if (st.useGeo) {
+      try {
+        const pos = await getPosition();
+        const lat = +pos.coords.latitude.toFixed(3), lon = +pos.coords.longitude.toFixed(3);
+        const g = st.geo;
+        if (!g || Math.abs(g.lat - lat) > 0.02 || Math.abs(g.lon - lon) > 0.02 || !g.name) {
+          let name = "tu zona";
+          try {
+            const r = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=es`);
+            const j = await r.json();
+            name = j.city || j.locality || j.principalSubdivision || name;
+          } catch (e) {}
+          st.geo = { lat, lon, name }; save();
+        }
+        geoProblem = "";
+        return st.geo;
+      } catch (e) {
+        geoProblem = (e && e.code === 1) ? "No has dado permiso para usar la ubicación." : "No se pudo obtener la ubicación ahora mismo.";
+        return st.geo || st.place;
+      }
+    }
+    return st.place;
+  }
+  // Iconos para los códigos de estado del cielo de AEMET (11 despejado, 12 poco nuboso… «n» = noche)
+  function aemetIcon(code) {
+    const n = /n$/.test(code || ""), c = parseInt(code, 10);
+    if (c === 11) return n ? "🌙" : "☀️";
+    if (c === 12) return n ? "🌙" : "🌤️";
+    if (c === 13 || c === 17) return n ? "☁️" : "⛅";
+    if (c >= 14 && c <= 16) return "☁️";
+    if (c >= 43 && c <= 46) return "🌦️";
+    if ((c >= 23 && c <= 26) || (c >= 40 && c <= 49)) return "🌧️";
+    if ((c >= 33 && c <= 36) || (c >= 71 && c <= 74)) return "🌨️";
+    if ((c >= 51 && c <= 54) || (c >= 61 && c <= 64)) return "⛈️";
+    if (c >= 81 && c <= 83) return "🌫️";
+    return "🌡️";
+  }
+  // ---------- Tiempo de AEMET a través de el-tiempo.net (gratis y sin clave) ----------
+  const numv = v => { const n = parseFloat(String(v ?? "").replace(",", ".")); return isFinite(n) ? n : null; };
+  const firstSky = v => {
+    if (v === null || v === undefined) return "";
+    if (typeof v === "string" || typeof v === "number") return String(v);
+    if (Array.isArray(v)) { for (const x of v) { const r = firstSky(x); if (r) return r; } return ""; }
+    if (typeof v === "object") return firstSky(v.value ?? v["#text"] ?? v.id ?? "");
+    return "";
+  };
+  const maxOf = v => {
+    const arr = Array.isArray(v) ? v : [v];
+    let m = null;
+    arr.forEach(x => { const n = numv(typeof x === "object" && x ? (x.value ?? x["#text"]) : x); if (n !== null && (m === null || n > m)) m = n; });
+    return m;
+  };
+  async function getJSON(urls) {
+    for (const u of urls) {
+      try { const r = await fetch(u); if (r.ok) return await r.json(); } catch (e) {}
+    }
+    throw new Error("sin respuesta");
+  }
+  // Código INE del municipio: el que pongas en Ajustes o el más cercano a la tablet.
+  async function municipioFor(p) {
+    const manual = (state.settings.ineCode || "").trim();
+    if (/^\d{5}$/.test(manual)) return manual;
+    const key = `${(+p.lat).toFixed(2)},${(+p.lon).toFixed(2)}`;
+    const a = state.settings.ineAuto;
+    if (a && a.key === key && a.code) return a.code;
+    // Sin código conocido, la búsqueda del municipio la hace el script de Google.
+    throw new Error("falta el municipio (ponlo en Ajustes o actualiza el script)");
+  }
+  async function weatherFromElTiempo(p) {
+    let d = null, problema = "";
+    // 1) A través del script de Google (evita bloqueos del navegador)
+    if (syncOn()) {
+      try {
+        const res = await callScript({ op: "tiempo_etn", lat: p.lat, lon: p.lon, nombre: p.name || "", ine: state.settings.ineCode || "" });
+        if (res && res.ok && res.datos) {
+          d = res.datos;
+          const nm = d.municipio && (d.municipio.NOMBRE || d.municipio.nombre);
+          if (!state.settings.ineCode) { state.settings.ineAuto = { key: `${(+p.lat).toFixed(2)},${(+p.lon).toFixed(2)}`, code: res.municipio, name: nm || "" }; save(); }
+        } else problema = res && res.error === "falta el identificador" ? "actualiza el script de Google" : ((res && res.error) || "");
+      } catch (e) { problema = "el script no responde"; }
+    }
+    // 2) Directamente desde la tablet
+    if (!d) {
+      try {
+        const code = await municipioFor(p), prov = code.slice(0, 2);
+        d = await getJSON([
+          `https://api.el-tiempo.net/json/v3/provincias/${prov}/municipios/${code}`
+        ]);
+      } catch (e) { throw new Error(problema || e.message || "sin respuesta"); }
+    }
+    const todayIso = iso(new Date());
+    const hoyCielo = firstSky(d.stateSky && d.stateSky.id);
+    const hoyLluvia = d.pronostico && d.pronostico.hoy ? maxOf(d.pronostico.hoy.prob_precipitacion) : null;
+    const dias = [{ fecha: todayIso, max: numv(d.temperaturas && d.temperaturas.max), min: numv(d.temperaturas && d.temperaturas.min), ico: aemetIcon(hoyCielo), lluvia: hoyLluvia }];
+    (d.proximos_dias || []).forEach((x, i) => {
+      const fecha = String((x["@attributes"] && x["@attributes"].fecha) || x.fecha || iso(addDays(new Date(), i))).slice(0, 10);
+      if (fecha <= todayIso) return;
+      const t = x.temperatura || {};
+      dias.push({ fecha, max: numv(t.maxima ?? t.max), min: numv(t.minima ?? t.min), ico: aemetIcon(firstSky(x.estado_cielo)), lluvia: maxOf(x.prob_precipitacion) });
+    });
+    const temp = numv(d.temperatura_actual);
+    if (temp === null && dias[0].max === null) throw new Error("respuesta sin datos");
+    return {
+      fuente: "AEMET (vía el-tiempo.net)",
+      nombre: (d.municipio && (d.municipio.NOMBRE || d.municipio.nombre)) || p.name,
+      temp: temp !== null ? temp : dias[0].max, sens: null,
+      ico: aemetIcon(hoyCielo), desc: (d.stateSky && d.stateSky.description) || "",
+      dias: dias.slice(0, 6)
+    };
+  }
+  async function weatherFromOpenMeteo(p) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${p.lat}&longitude=${p.lon}&current=temperature_2m,apparent_temperature,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&forecast_days=6`;
+    const r = await fetch(url); if (!r.ok) throw new Error("Open-Meteo no responde");
+    const d = await r.json();
+    const [ico, desc] = wx(d.current.weather_code);
+    return {
+      fuente: "Open-Meteo", nombre: p.name,
+      temp: d.current.temperature_2m, sens: d.current.apparent_temperature, ico, desc,
+      dias: d.daily.time.map((t, i) => ({ fecha: t, max: d.daily.temperature_2m_max[i], min: d.daily.temperature_2m_min[i], ico: wx(d.daily.weather_code[i])[0], lluvia: d.daily.precipitation_probability_max[i] }))
+    };
+  }
+  const r0 = v => (v === null || v === undefined || isNaN(v)) ? "–" : Math.round(v);
+  async function loadWeather() {
+    const box = $("#weather");
+    const p = await resolvePlace();
+    if (!p) {
+      box.innerHTML = `<p class="wx-note" style="font-size:1rem">${geoProblem || ""} Permite el acceso a la ubicación o elige una ciudad.</p><button class="btn" id="pick-city">Elegir ubicación</button>`;
+      $("#pick-city").onclick = openSettings; return;
+    }
+    let w = null, aemetProblem = "";
+    try { w = await weatherFromElTiempo(p); } catch (e) { aemetProblem = e.message || "no responde"; }
+    if (!w) { try { w = await weatherFromOpenMeteo(p); } catch (e) {} }
+    if (!w) {
+      box.innerHTML = `<p class="wx-note" style="font-size:1rem">No se pudo cargar el tiempo de ${esc(p.name || "tu zona")}. Comprueba que la tablet tiene internet; se reintentará en unos minutos.</p>`;
+      return;
+    }
+    const todayIso = iso(new Date());
+    const days = w.dias.slice(0, 6).map((d, i) => {
+      const name = d.fecha === todayIso || (i === 0 && d.fecha < todayIso) ? "Hoy" : dayShort[(parse(d.fecha).getDay() + 6) % 7];
+      return `<div class="wx-day"><b>${name}</b><span class="wx-ico">${d.ico}</span>${r0(d.max)}° / ${r0(d.min)}°${d.lluvia >= 20 ? `<span class="wx-rain" style="display:block">${d.lluvia} %</span>` : ""}</div>`;
+    }).join("");
+    const n = new Date();
+    const fuente = w.fuente + (aemetProblem && w.fuente === "Open-Meteo" ? ` (AEMET: ${aemetProblem})` : "");
+    box.innerHTML = `
+      <div class="wx-main">
+        <span class="wx-temp">${w.ico} ${r0(w.temp)}°</span>
+        <span class="wx-desc">${esc(w.desc)}${w.desc ? " en " : ""}${esc(w.nombre || "tu zona")}${w.sens !== null && w.sens !== undefined ? `<small>Sensación de ${r0(w.sens)}°</small>` : ""}</span>
+      </div>
+      <div class="wx-days">${days}</div>
+      <div class="wx-note">Datos: ${esc(fuente)}. Actualizado a las ${pad(n.getHours())}:${pad(n.getMinutes())}</div>`;
+  }
+
+  // ---------- Ajustes ----------
+  const setDlg = $("#settings-dlg");
+  function openSettings() {
+    const p = state.settings.place;
+    $("#city-current").textContent = p ? `Ciudad elegida: ${p.name}` : "Todavía no has elegido ciudad.";
+    $("#opt-geo").checked = state.settings.useGeo;
+    $("#ine-code").value = state.settings.ineCode || "";
+    $("#ine-status").textContent = state.settings.ineCode ? "Usando el municipio que has indicado." : (state.settings.ineAuto && state.settings.ineAuto.name ? `Municipio detectado: ${state.settings.ineAuto.name} (${state.settings.ineAuto.code}).` : "Si lo dejas vacío, se usa el municipio más cercano a la ubicación.");
+    $("#geo-status").textContent = state.settings.useGeo ? (geoProblem || (state.settings.geo ? `Ubicación detectada: ${state.settings.geo.name}` : "")) : "";
+    const sy = state.settings.sync || {};
+    $("#sync-url").value = sy.url || ""; $("#sync-token").value = sy.token || "";
+    showSync();
+    $("#city-results").innerHTML = "";
+    $("#opt-dim").checked = state.settings.dim;
+    $("#opt-scale").value = String(state.settings.scale || "auto");
+    $("#opt-wake").checked = state.settings.wake;
+    showWake();
+    setDlg.showModal();
+  }
+  $("#open-settings").onclick = openSettings;
+  document.querySelectorAll("[data-close]").forEach(b => b.onclick = () => b.closest("dialog").close());
+
+  async function searchCity() {
+    const q = $("#city").value.trim(); if (!q) return;
+    const ul = $("#city-results");
+    ul.innerHTML = `<li class="hint">Buscando…</li>`;
+    try {
+      const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=6&language=es`);
+      const d = await r.json();
+      if (!d.results || !d.results.length) { ul.innerHTML = `<li class="hint">No hay resultados para «${esc(q)}». Prueba con otro nombre.</li>`; return; }
+      ul.innerHTML = d.results.map((c, i) => `<li><button data-i="${i}">${esc(c.name)}<span class="hint" style="display:inline"> ${esc([c.admin1, c.country].filter(Boolean).join(", "))}</span></button></li>`).join("");
+      ul.querySelectorAll("button").forEach(b => b.onclick = () => {
+        const c = d.results[b.dataset.i];
+        state.settings.place = { name: c.name, lat: c.latitude, lon: c.longitude };
+        state.settings.useGeo = false; $("#opt-geo").checked = false; $("#geo-status").textContent = "";
+        save(); $("#city-current").textContent = `Ciudad elegida: ${c.name}`; ul.innerHTML = ""; $("#city").value = "";
+        loadWeather();
+      });
+    } catch (e) { ul.innerHTML = `<li class="hint">No se pudo buscar. Comprueba la conexión a internet.</li>`; }
+  }
+  $("#city-search").onclick = searchCity;
+  $("#city").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); searchCity(); } });
+
+  $("#ine-code").addEventListener("change", e => {
+    const v = e.target.value.trim();
+    if (v && !/^\d{5}$/.test(v)) { $("#ine-status").textContent = "Tiene que ser un número de 5 cifras."; return; }
+    state.settings.ineCode = v; save(); loadWeather();
+    $("#ine-status").textContent = v ? "Usando el municipio que has indicado." : "Se usará el municipio más cercano a la ubicación.";
+  });
+  $("#opt-geo").onchange = async e => {
+    state.settings.useGeo = e.target.checked; save();
+    $("#geo-status").textContent = e.target.checked ? "Buscando tu ubicación…" : "";
+    await loadWeather();
+    if (e.target.checked) $("#geo-status").textContent = geoProblem || (state.settings.geo ? `Ubicación detectada: ${state.settings.geo.name}` : "");
+  };
+  $("#sync-connect").onclick = async () => {
+    const url = $("#sync-url").value.trim().replace(/\/+$/, "").replace(/\?.*$/, ""), token = $("#sync-token").value.trim();
+    if (!/^https:\/\/script\.google\.com\/(a\/[^/]+\/)?macros\/s\/[\w-]+\/exec$/.test(url)) { $("#sync-status").textContent = "La dirección no es correcta: debe empezar por https://script.google.com/macros/s/ y terminar en /exec. Cópiala de «Implementar» → «Gestionar implementaciones»."; $("#sync-status").style.color = "var(--danger)"; return; }
+    state.settings.sync = { url, token }; save();
+    $("#sync-status").style.color = ""; $("#sync-status").textContent = "Probando la conexión…";
+    try {
+      const r = await callScript({ op: "ping" });
+      if (!r.ok) { syncError = r.error === "token" ? "La clave no coincide con la del script de Google." : `Google ha dado un error: ${r.error || "desconocido"}.`; return showSync(); }
+    } catch (e) { syncError = connError(e); return showSync(); }
+    syncError = "";
+    $("#sync-status").textContent = "Juntando los datos de esta tablet con los de Google…";
+    state.itemSync = 0;
+    try { await initialMerge(); bringRefresh(); } catch (e) { syncError = e.message === "token" ? "La clave no coincide con la del script de Google." : connError(e); }
+    showSync(); renderShop();
+  };
+  $("#sync-off").onclick = () => { state.settings.sync = null; state.queue = []; state.itemSync = 0; state.rev = 0; syncError = ""; save(); $("#sync-url").value = ""; $("#sync-token").value = ""; showSync(); renderShop(); };
+
+  // ---------- Calendario anual ----------
+  const monthName = new Intl.DateTimeFormat("es-ES", { month: "long" });
+  let yearShown = new Date().getFullYear();
+  function renderYear() {
+    $("#y-title").textContent = yearShown;
+    const now = new Date();
+    $("#year-grid").innerHTML = Array.from({ length: 12 }, (_, m) => {
+      const first = new Date(yearShown, m, 1), days = new Date(yearShown, m + 1, 0).getDate();
+      const lead = (first.getDay() + 6) % 7;
+      let cells = ["L", "M", "X", "J", "V", "S", "D"].map(d => `<span class="wd">${d}</span>`).join("");
+      cells += "<span></span>".repeat(lead);
+      for (let d = 1; d <= days; d++) {
+        const k = `${yearShown}-${pad(m + 1)}-${pad(d)}`, wd = (lead + d - 1) % 7, hol = holiday(k);
+        const evs = eventsOn(k);
+        const mark = evs.some(e => !e.weekly) ? "ev" : (evs.length ? "rep" : "");
+        const cls = ["md", wd >= 5 ? "wk" : "", hol ? "hol" : "", k === today ? "tod" : "", mark].filter(Boolean).join(" ");
+        const info = evs.length ? `, ${evs.length} ${evs.length > 1 ? "cosas agendadas" : "cosa agendada"}` : "";
+        cells += `<button class="${cls}" data-date="${k}" aria-label="${d} de ${monthName.format(first)}${hol ? `, festivo: ${esc(hol)}` : ""}${info}">${d}</button>`;
+      }
+      const name = monthName.format(first);
+      const current = yearShown === now.getFullYear() && m === now.getMonth();
+      return `<div class="month${current ? " is-current" : ""}"><h3>${name[0].toUpperCase() + name.slice(1)}</h3><div class="mgrid">${cells}</div></div>`;
+    }).join("");
+  }
+  const yearView = $("#year-view");
+  $("#open-year").onclick = () => { yearShown = new Date().getFullYear(); renderYear(); yearView.hidden = false; $("#year-home").focus(); };
+  const closeYear = () => { yearView.hidden = true; };
+  $("#year-home").onclick = () => { closeYear(); weekStart = mondayOf(new Date()); renderWeek(); };
+  $("#y-prev").onclick = () => { yearShown--; renderYear(); };
+  $("#y-next").onclick = () => { yearShown++; renderYear(); };
+  $("#year-grid").addEventListener("click", e => {
+    const b = e.target.closest(".md"); if (!b) return;
+    openDay(b.dataset.date, true);
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !yearView.hidden && !document.querySelector("dialog[open]")) closeYear(); });
+
+  // ---------- Ajuste a la pantalla ----------
+  // El panel está pensado para unos 1240×800 puntos (horizontal) o 820×1100 (vertical).
+  // En pantallas más pequeñas se reduce entero, manteniendo la misma distribución.
+  const phoneMQ = window.matchMedia("(max-width:699px), (max-width:900px) and (orientation:landscape) and (max-height:500px)");
+  function fitScreen() {
+    const app = $(".app");
+    const vw = window.innerWidth, vh = window.innerHeight;
+    const reset = () => { app.classList.remove("scaled"); app.style.width = app.style.height = app.style.transform = ""; app.style.removeProperty("--svw"); app.style.removeProperty("--svh"); document.body.classList.remove("has-scaled"); };
+    if (phoneMQ.matches) return reset();
+    const portrait = vh > vw;
+    const base = portrait ? { w: 820, h: 1100 } : { w: 1240, h: 800 };
+    const pref = state.settings.scale;
+    const cs = getComputedStyle(document.documentElement);
+    const safeTop = parseFloat(cs.paddingTop) || 0, safeBottom = parseFloat(cs.paddingBottom) || 0;
+    const h = vh - safeTop - safeBottom;
+    const z = pref && pref !== "auto" ? +pref : Math.min(1, vw / base.w, h / base.h);
+    // Siempre se fija el tamaño exacto de la pantalla, para que el panel la llene entera.
+    app.classList.add("scaled"); document.body.classList.add("has-scaled");
+    app.style.width = `${vw / z}px`;
+    app.style.height = `${h / z}px`;
+    app.style.transform = `scale(${z})`;
+    app.style.setProperty("--svw", `${vw / z / 100}px`);
+    app.style.setProperty("--svh", `${h / z / 100}px`);
+  }
+  window.addEventListener("resize", fitScreen);
+  if (window.visualViewport) window.visualViewport.addEventListener("resize", fitScreen);
+  window.addEventListener("orientationchange", () => setTimeout(fitScreen, 300));
+  $("#opt-scale").onchange = e => { state.settings.scale = e.target.value; save(); fitScreen(); };
+
+  $("#opt-dim").onchange = e => { state.settings.dim = e.target.checked; save(); tick(); };
+  let lock = null;
+  // Dos métodos a la vez: la función oficial del navegador y, para iPad/iPhone, un vídeo
+  // invisible y sin sonido en bucle (el truco habitual para que iOS no apague la pantalla).
+  const WAKE_VIDEO = "data:video/mp4;base64,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b21hX21lPTEgdHJlbGxpcz0xIDh4OGRjdD0wIGNxbT0wIGRlYWR6b25lPTIxLDExIGZhc3RfcHNraXA9MSBjaHJvbWFfcXBfb2Zmc2V0PS0yIHRocmVhZHM9MSBsb29rYWhlYWRfdGhyZWFkcz0xIHNsaWNlZF90aHJlYWRzPTAgbnI9MCBkZWNpbWF0ZT0xIGludGVybGFjZWQ9MCBibHVyYXlfY29tcGF0PTAgY29uc3RyYWluZWRfaW50cmE9MCBiZnJhbWVzPTAgd2VpZ2h0cD0wIGtleWludD0yNTAga2V5aW50X21pbj0xIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAADmWIhAW///8PRQABT3+AARggBwEYIAcBGCAHARggBwEYIAcBGCAHARggBwEYIAcAAAAGQZo4CvqAARggBwEYIAcBGCAHARggBwEYIAcBGCAHARggBwEYIAc=";
+  let wakeVideo = null, wakeState = "";
+  async function applyWake() {
+    if (!state.settings.wake) {
+      try { if (lock) await lock.release(); } catch (e) {}
+      lock = null; if (wakeVideo) wakeVideo.pause();
+      wakeState = ""; return showWake();
+    }
+    if (document.visibilityState !== "visible") return;
+    let ok = false;
+    if ("wakeLock" in navigator) {
+      try {
+        if (!lock || lock.released) {
+          lock = await navigator.wakeLock.request("screen");
+          lock.addEventListener("release", () => { if (state.settings.wake && document.visibilityState === "visible") setTimeout(applyWake, 1500); });
+        }
+        ok = true;
+      } catch (e) {}
+    }
+    try {
+      if (!wakeVideo) {
+        wakeVideo = document.createElement("video");
+        wakeVideo.setAttribute("playsinline", ""); wakeVideo.setAttribute("muted", ""); wakeVideo.setAttribute("loop", "");
+        wakeVideo.muted = true; wakeVideo.loop = true; wakeVideo.src = WAKE_VIDEO;
+        wakeVideo.style.cssText = "position:fixed;left:0;bottom:0;width:2px;height:2px;opacity:.01;pointer-events:none";
+        document.body.appendChild(wakeVideo);
+      }
+      if (wakeVideo.paused) await wakeVideo.play();
+      ok = true;
+    } catch (e) {}
+    wakeState = ok ? "on" : "touch";
+    showWake();
+  }
+  function showWake() {
+    const el = $("#wake-status"); if (!el) return;
+    el.textContent = !state.settings.wake ? "" : wakeState === "on" ? "Activado: la pantalla no se apagará mientras el panel esté abierto."
+      : "Toca la pantalla una vez para activarlo (el navegador lo exige tras recargar).";
+  }
+  // Safari solo deja activarlo tras tocar la pantalla: se reintenta con cada toque si hace falta.
+  document.addEventListener("pointerdown", () => {
+    if (state.settings.wake && (wakeState !== "on" || (lock && lock.released) || (wakeVideo && wakeVideo.paused))) applyWake();
+  }, { passive: true });
+  setInterval(() => { if (state.settings.wake && document.visibilityState === "visible" && ((lock && lock.released) || (wakeVideo && wakeVideo.paused))) applyWake(); }, 30000);
+  $("#opt-wake").onchange = e => { state.settings.wake = e.target.checked; save(); applyWake(); };
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { applyWake(); loadWeather(); syncNow(); } });
+
+  $("#export").onclick = () => {
+    const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = `panel-casa-${today}.json`; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  };
+  $("#import").onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const data = JSON.parse(await f.text());
+      if (!Array.isArray(data.tasks) || !Array.isArray(data.events)) throw 0;
+      state = Object.assign(blank(), data); if (typeof state.notes !== "string") state.notes = ""; seed(); state.settings = Object.assign(blank().settings, data.settings || {});
+      save(); renderAll(); setDlg.close();
+    } catch (err) { alert("Ese archivo no es una copia válida del panel."); }
+    e.target.value = "";
+  };
+  $("#wipe").onclick = () => {
+    if (!confirm("¿Borrar todas las tareas, eventos, notas y ajustes de esta tablet? Las clases de escalada se volverán a añadir.")) return;
+    state = blank(); seed(); save(); renderAll(); setDlg.close();
+  };
+
+  // Las notas ya no se muestran; se conservan guardadas por si vuelven.
+  const notesDirty = false;
+  function renderNotes() {}
+
+  // ChatGPT: abrir solo la app, sin la ventana web.
+  // Ojo: muchas tablets Android navegan en «modo ordenador» y no dicen que son Android,
+  // así que también se reconocen por ser Linux con pantalla táctil.
+  $("#open-chatgpt").addEventListener("click", e => {
+    e.preventDefault();
+    const ua = navigator.userAgent, touch = navigator.maxTouchPoints > 0;
+    const uaPlat = (navigator.userAgentData && navigator.userAgentData.platform) || "";
+    const isIOS = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    const isAndroid = /Android/i.test(ua) || /Android/i.test(uaPlat) || (/Linux|X11/.test(ua) && touch);
+    if (isIOS) { location.href = "chatgpt://chatgpt.com/"; return; }
+    if (isAndroid) {
+      // Se pide a Android que abra la app como si se tocara su icono: sin dirección web de por medio,
+      // así ningún navegador abre la página a la vez.
+      location.href = "intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;" +
+        "launchFlags=0x10000000;package=com.openai.chatgpt;end";
+      return;
+    }
+    window.open("https://chatgpt.com/", "_blank", "noopener");
+  });
+
+  $("#reload").onclick = () => {
+    $("#reload").classList.add("spin");
+    location.reload();
+  };
+
+  function renderAll() { fitScreen(); tick(); renderTasks(); renderWeek(); renderNotes(); renderShop(); loadWeather(); applyWake(); syncNow(); }
+  renderAll();
+  (function loop() { tick(); setTimeout(loop, 1000 - (Date.now() % 1000) + 10); })();
+  setInterval(loadWeather, 30 * 60 * 1000);
+  setInterval(() => { if (document.visibilityState === "visible") syncNow(); }, 60 * 1000);
+})();
+</script>
+</body>
+</html>
