@@ -223,6 +223,20 @@ body.has-scaled{overflow:hidden}
 @media (orientation:portrait) and (min-width:700px){ .year-grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
 @media (max-width:699px){ .year-grid{grid-template-columns:repeat(2,minmax(0,1fr))} .year-head .legend{display:none} .year-view{padding-left:14px; padding-right:14px} }
 
+/* Menú semanal */
+.menu-view{position:fixed; inset:0; z-index:15; background:var(--bg); display:flex; flex-direction:column;
+  padding:calc(16px + env(safe-area-inset-top,0px)) 24px calc(16px + env(safe-area-inset-bottom,0px))}
+.menu-view[hidden]{display:none}
+.menu-view .year-head{flex-wrap:wrap}
+.menu-stage{flex:1; min-height:0; overflow:auto; background:var(--surface); border-radius:18px; display:flex; align-items:center; justify-content:center; -webkit-overflow-scrolling:touch}
+.menu-stage img{max-width:100%; max-height:100%; object-fit:contain; display:block}
+.menu-stage.zoom{align-items:flex-start; justify-content:flex-start}
+.menu-stage.zoom img{max-width:none; max-height:none; width:190%}
+.menu-msg{margin:0 0 10px; color:var(--muted); font-size:1rem}
+.menu-msg:empty{display:none}
+.menu-msg.err{color:var(--danger)}
+.corner .menu-btn{color:var(--c-amber-ink)}
+
 /* Modo noche */
 .night-veil{position:fixed; inset:0; background:#000; opacity:0; pointer-events:none; transition:opacity 1.5s; z-index:20}
 body.dim .night-veil{opacity:.55}
@@ -436,8 +450,25 @@ dialog h3{font-family:var(--display); font-size:1.4rem; margin:0 0 14px}
   <a class="icon-btn chat-btn" id="open-chatgpt" href="https://chatgpt.com/" rel="noopener" aria-label="Abrir ChatGPT" title="ChatGPT">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg>
   </a>
+  <button class="icon-btn menu-btn" id="open-menu" aria-label="Ver el menú semanal" title="Menú semanal">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 21V3c-2.2 1.2-3.5 3.6-3.5 6.5V13H17"/></svg>
+  </button>
   <span class="sync-dot" id="sync-dot" hidden></span>
 </div>
+
+<section class="menu-view" id="menu-view" hidden aria-labelledby="m-title">
+  <div class="year-head">
+    <button class="icon-btn home-btn" id="menu-home" aria-label="Volver a la pantalla de inicio"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.8V20h13V9.8"/><path d="M10 20v-5.5h4V20"/></svg>Inicio</button>
+    <h2 id="m-title" style="font-size:1.6rem; min-width:0; text-align:left">Menú semanal</h2>
+    <span class="hint" id="menu-info" style="margin:0"></span>
+    <span style="flex:1"></span>
+    <button class="btn ghost" type="button" id="menu-zoom">Ampliar</button>
+    <label class="btn" for="menu-file" style="cursor:pointer">Subir menú nuevo</label>
+    <input type="file" id="menu-file" accept="image/*" hidden>
+  </div>
+  <p class="menu-msg" id="menu-msg"></p>
+  <div class="menu-stage" id="menu-stage"><img id="menu-img" alt="Menú semanal" hidden></div>
+</section>
 
 <div class="topbar">
 
@@ -835,6 +866,7 @@ dialog h3{font-family:var(--display); font-size:1.4rem; margin:0 0 14px}
     if (!syncOn()) return showSync();
     if (state.itemSync !== 2) { try { await initialMerge(); bringRefresh(); } catch (e) { syncError = e.message === "token" ? "La clave no coincide con la del script de Google." : connError(e); showSync(); } return; }
     await flush(); await pull(); showSync(); bringRefresh();
+    if (Date.now() - menuCheckedAt > 10 * 60 * 1000) menuFetch(true);
   }
   function showSync() {
     const dot = $("#sync-dot"), st = $("#sync-status");
@@ -1447,6 +1479,98 @@ dialog h3{font-family:var(--display); font-size:1.4rem; margin:0 0 14px}
   // Las notas ya no se muestran; se conservan guardadas por si vuelven.
   const notesDirty = false;
   function renderNotes() {}
+
+  // ---------- Menú semanal ----------
+  // La imagen se guarda en esta tablet (para verla al momento) y en tu Google Drive (para las demás).
+  const MENU_KEY = "panel-casa-menu";
+  let menuCache = null, menuCheckedAt = 0, menuBusy = false;
+  try { menuCache = JSON.parse(localStorage.getItem(MENU_KEY) || "null"); } catch (e) {}
+  const saveMenuCache = () => { try { localStorage.setItem(MENU_KEY, JSON.stringify(menuCache)); } catch (e) {} };
+  const menuView = $("#menu-view");
+  const fmtMenuDate = t => new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" }).format(new Date(t));
+  function menuMsg(text, err) { const m = $("#menu-msg"); m.textContent = text || ""; m.classList.toggle("err", !!err); }
+  function showMenu() {
+    const img = $("#menu-img");
+    if (menuCache && menuCache.dataUrl) {
+      img.src = menuCache.dataUrl; img.hidden = false;
+      $("#menu-info").textContent = `Subido el ${fmtMenuDate(menuCache.updated)}`;
+    } else {
+      img.hidden = true; img.removeAttribute("src");
+      $("#menu-info").textContent = "";
+      menuMsg("Todavía no hay ningún menú. Pulsa «Subir menú nuevo» y elige la imagen.");
+    }
+  }
+  async function menuFetch(quiet) {
+    if (!syncOn() || menuBusy) return;
+    menuCheckedAt = Date.now();
+    try {
+      const res = await callScriptRetry({ op: "menu_ver", since: (menuCache && menuCache.updated) || 0 });
+      if (!res || !res.ok) {
+        if (!quiet) menuMsg(res && res.error === "operación desconocida" || (res && res.error === "falta el identificador") ? "Actualiza el script de Google para poder compartir el menú entre tablets." : `No se pudo comprobar si hay menú nuevo: ${(res && res.error) || "sin respuesta"}.`, true);
+        return;
+      }
+      if (res.datos) {
+        menuCache = { updated: res.updated, dataUrl: `data:${res.mime || "image/jpeg"};base64,${res.datos}` };
+        saveMenuCache(); if (!menuView.hidden) { menuMsg(""); showMenu(); }
+      } else if (!quiet && !menuView.hidden && (!menuCache || !menuCache.dataUrl)) showMenu();
+    } catch (e) { if (!quiet) menuMsg("No se pudo conectar con Google para ver si hay un menú nuevo.", true); }
+  }
+  function openMenu() { menuMsg(""); $("#menu-stage").classList.remove("zoom"); $("#menu-zoom").textContent = "Ampliar"; showMenu(); menuView.hidden = false; menuFetch(false); }
+  $("#open-menu").onclick = openMenu;
+  $("#menu-home").onclick = () => { menuView.hidden = true; };
+  $("#menu-zoom").onclick = () => {
+    const z = $("#menu-stage").classList.toggle("zoom");
+    $("#menu-zoom").textContent = z ? "Ajustar a la pantalla" : "Ampliar";
+  };
+  // Reduce la imagen (máx. 1700 px) y la pasa a JPEG para que ocupe poco.
+  async function compressImage(file) {
+    const url = URL.createObjectURL(file);
+    try {
+      const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
+      const k = Math.min(1, 1700 / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement("canvas");
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+      const ctx = c.getContext("2d"); ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, c.width, c.height);
+      ctx.drawImage(img, 0, 0, c.width, c.height);
+      return c.toDataURL("image/jpeg", 0.76);
+    } finally { URL.revokeObjectURL(url); }
+  }
+  async function uploadMenu(b64, size) {
+    const uid = uid_() , n = Math.ceil(b64.length / size);
+    let next = 0, done = 0;
+    const worker = async () => {
+      while (next < n) {
+        const i = next++;
+        const res = await callScriptRetry({ op: "menu_trozo", uid, i, datos: b64.slice(i * size, (i + 1) * size) });
+        if (!res || !res.ok) throw new Error((res && res.error) || "trozo");
+        done++; menuMsg(`Subiendo el menú a Google… ${Math.round(done / n * 100)} %`);
+      }
+    };
+    await Promise.all([worker(), worker(), worker(), worker()]);
+    const res = await callScriptRetry({ op: "menu_guardar", uid, n, mime: "image/jpeg" });
+    if (!res || !res.ok) throw new Error((res && res.error) || "guardar");
+    return res.updated;
+  }
+  const uid_ = () => uid() + Date.now().toString(36);
+  $("#menu-file").addEventListener("change", async e => {
+    const file = e.target.files[0]; e.target.value = "";
+    if (!file) return;
+    menuBusy = true;
+    try {
+      menuMsg("Preparando la imagen…");
+      const dataUrl = await compressImage(file);
+      menuCache = { updated: Date.now(), dataUrl }; saveMenuCache(); showMenu();
+      if (!syncOn()) { menuMsg("Menú guardado en esta tablet. Conecta Google en Ajustes para que se vea también en las demás."); return; }
+      const b64 = dataUrl.split(",")[1];
+      let updated;
+      try { updated = await uploadMenu(b64, 4000); }
+      catch (err) { updated = await uploadMenu(b64, 1500); } // por si la tablet no admite trozos grandes
+      menuCache.updated = updated; saveMenuCache(); showMenu();
+      menuMsg("Menú subido. Las demás tablets lo verán en unos minutos.");
+    } catch (err) {
+      menuMsg(`El menú se ve en esta tablet, pero no se pudo subir a Google (${err.message}). Comprueba que el script está actualizado.`, true);
+    } finally { menuBusy = false; }
+  });
 
   // ChatGPT: abrir solo la app, sin la ventana web.
   // Ojo: muchas tablets Android navegan en «modo ordenador» y no dicen que son Android,
